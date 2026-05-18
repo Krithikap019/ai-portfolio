@@ -39,7 +39,7 @@ export default function ChatProject() {
     <main style={{ background: "#0a0a0f", minHeight: "100vh", color: "#e8e8f0", fontFamily: "'Syne', sans-serif" }}>
       <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.2rem 3rem", borderBottom: "1px solid #1e1e2e" }}>
         <Link href="/" style={{ fontFamily: "'DM Serif Display', serif", fontSize: "1.3rem", textDecoration: "none", color: "inherit" }}>
-          your<span style={{ color: "#6c63ff" }}>.</span>name
+          Krithika<span style={{ color: "#6c63ff" }}>.</span>Suwarna
         </Link>
         <Link href="/" style={{ fontSize: "0.8rem", color: "#6b6b80", textDecoration: "none" }}>← Back home</Link>
       </nav>
