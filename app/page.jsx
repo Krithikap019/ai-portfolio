@@ -38,7 +38,7 @@ export default function Home() {
       {/* Nav */}
       <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.2rem 3rem", borderBottom: "1px solid #1e1e2e" }}>
         <div style={{ fontFamily: "'DM Serif Display', serif", fontSize: "1.3rem" }}>
-          your<span style={{ color: "#6c63ff" }}>.</span>name
+          Krithika<span style={{ color: "#6c63ff" }}>.</span>Suwarna
         </div>
         <div style={{ display: "flex", gap: "2rem", fontSize: "0.8rem", letterSpacing: "0.08em", textTransform: "uppercase", color: "#6b6b80" }}>
           <Link href="#projects" style={{ color: "inherit", textDecoration: "none" }}>Work</Link>
@@ -93,7 +93,7 @@ export default function Home() {
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "3rem", alignItems: "center" }}>
           <div>
             <h2 style={{ fontFamily: "'DM Serif Display', serif", fontSize: "2rem", marginBottom: "1rem" }}>
-              Hi, I'm [Your Name]
+              Hi, I'm Krithika Suwarna
             </h2>
             <p style={{ color: "#6b6b80", lineHeight: "1.8", marginBottom: "1rem" }}>
               I'm an AI engineer who loves building tools that make people's lives easier.
