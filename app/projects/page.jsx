@@ -3,8 +3,9 @@ import { useState } from "react";
 import Link from "next/link";
 
 const projects = [
-  { id: 1, title: "AI Conversation Intelligence", cat: "NLP & AI", tags: ["Python", "Streamlit", "RAG", "NLP"], icon: "🧠", link: "/projects/ai_conversation" },
-  { id: 2, title: "Intuit – Predictive Analytics for QuickBooks", cat: "Machine Learning", tags: ["XGBoost", "Python", "Regression"], icon: "📊", link: "/projects/ai_fin_analyser" },
+  { id: 0, title: "AI Conversation Intelligence", cat: "NLP & AI", tags: ["Python", "Streamlit", "RAG", "NLP"], icon: "🧠", link: "/projects/ai_conversation" },
+  { id: 1, title: "AI Financial Report Analyzer", cat: "NLP & AI", tags: ["Python", "RAG", "FAISS", "Groq"], icon: "💹", link: "/projects/ai_fin_analyzer" },
+  { id: 2, title: "Intuit – Predictive Analytics for QuickBooks", cat: "Machine Learning", tags: ["XGBoost", "Python", "Regression"], icon: "📊", link: "#" },
   { id: 3, title: "S-Mobile Customer Churn Prediction", cat: "Machine Learning", tags: ["Neural Networks", "Random Forest", "Python"], icon: "📱", link: "#" },
   { id: 4, title: "Amazon Health & Personal Care Recommender", cat: "NLP & AI", tags: ["SVD", "NLP", "Python", "Regression"], icon: "🛒", link: "#" },
   { id: 5, title: "COVID-19 Detection from Chest X-rays", cat: "Deep Learning", tags: ["CNN", "VGG16", "Random Forest"], icon: "🏥", link: "#" },

@@ -18,7 +18,7 @@ const projects = [
     title: "AI Financial Report Analyzer",
     description: "RAG-powered system that turns 10-K filings and earnings transcripts into a conversational assistant. Ask questions, get citation-backed answers with page references.",
     tags: ["Python", "RAG", "FAISS"],
-    href: "projects/ai_conversation",
+    href: "projects/ai_fin_analyser",
   },
   {
     id: "image",
