@@ -9,8 +9,7 @@ html {
 }
 
 body {
-  background: #0a0a0f;
-  color: #e8e8f0;
-  font-family: var(--font-sans), sans-serif;
+  background: #f4f8f6;
+  color: #0d1f18;
   -webkit-font-smoothing: antialiased;
 }
