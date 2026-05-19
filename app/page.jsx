@@ -50,15 +50,9 @@ function ExperienceTimeline() {
     },
     {
       id: 3, role: "R&D Engineer 2", company: "BroadCom", location: "Bangalore, India",
-      period: "Nov 2023–Jun 2024", type: "Full-time", side: "left",
+      period: "Jul 2021–Jun 2024", type: "Full-time", side: "left",
       desc: "Designed and optimized research pipelines for high-performance networking systems. Contributed to distributed infrastructure components and improved system reliability across production environments.",
       tags: ["Python", "Systems", "Networking", "Infrastructure"],
-    },
-    {
-      id: 4, role: "Member of Technical Staff 2", company: "VMware", location: "Bangalore, India",
-      period: "Jul 2021–Nov 2023", type: "Full-time", side: "right",
-      desc: "Led feature development for cloud infrastructure and virtualization tools. Collaborated cross-functionally to ship platform improvements and contributed to internal developer tooling used by thousands of engineers.",
-      tags: ["Cloud", "Java", "Virtualization", "Platform"],
     },
     {
       id: 5, role: "R&D Intern", company: "VMware", location: "Bangalore, India",
@@ -347,7 +341,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" style={{ margin: "0 3.5rem 4rem", background: "#0a7c52", borderRadius: "8px", padding: "3rem 3.5rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <section id="contact" style={{ margin: "0", background: "#0a7c52", borderRadius: "8px", padding: "3rem 3.5rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div>
           <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.2rem", fontWeight: 600, color: "#fff", marginBottom: "0.5rem" }}>Let's build something</h3>
           <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.9rem" }}>Open to freelance projects and full-time roles</p>
