@@ -71,7 +71,7 @@ function ExperienceTimeline() {
   const cardStyle = (exp) => ({
     cursor: "pointer",
     background: selected === exp.id ? "#fff" : "rgba(255,255,255,0.6)",
-    borderRadius: "0",
+    borderRadius: "8px",
     padding: "1rem",
     border: selected === exp.id ? "1px solid #0a7c52" : "1px solid rgba(10,124,82,0.12)",
     transition: "all 0.3s ease",
@@ -341,7 +341,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" style={{ margin: "0", background: "#0a7c52", borderRadius: "8px", padding: "3rem 3.5rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <section id="contact" style={{ margin: "0", background: "#0a7c52", borderRadius: "0", padding: "3rem 3.5rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div>
           <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.2rem", fontWeight: 600, color: "#fff", marginBottom: "0.5rem" }}>Let's build something</h3>
           <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.9rem" }}>Open to freelance projects and full-time roles</p>
