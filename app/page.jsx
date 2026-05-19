@@ -78,7 +78,7 @@ function ExperienceTimeline() {
     <div style={{ position: "relative", maxWidth: "900px", margin: "0 auto" }}>
       <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.25)", transform: "translateX(-50%)" }} />
       {experiences.map((exp) => (
-        <div key={exp.id} style={{ display: "grid", gridTemplateColumns: "1fr 40px 1fr", gap: "0 1rem", marginBottom: "2rem", alignItems: "start" }}>
+        <div key={exp.id} style={{ display: "grid", gridTemplateColumns: "1fr 40px 1fr", gap: "0 1rem", marginBottom: "0.8rem", alignItems: "start" }}>
 
           {/* Left side */}
           <div
