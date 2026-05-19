@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import ProjectCard from "../components/ProjectCard";
 
 const projects = [
   {
@@ -9,7 +8,6 @@ const projects = [
     title: "AI Chat Assistant",
     description: "Claude-powered chatbot with memory, custom personas, and Markdown rendering.",
     tags: ["Claude API", "Next.js"],
-    color: "#0a7c52",
     href: "/projects/chat",
   },
   {
@@ -18,7 +16,6 @@ const projects = [
     title: "Image Analyzer",
     description: "Upload any image and get detailed AI-generated descriptions and insights.",
     tags: ["Vision API", "React"],
-    color: "#0a7c52",
     href: "/projects/image",
   },
   {
@@ -27,19 +24,74 @@ const projects = [
     title: "Doc Summarizer",
     description: "Paste any text and get a clean, structured summary in seconds.",
     tags: ["Claude API", "Python"],
-    color: "#0a7c52",
     href: "/projects/summarizer",
   },
 ];
 
 const skills = ["Python", "Machine Learning", "Next.js", "Data Science", "Claude API", "React", "SQL", "TensorFlow"];
 
+function ProjectCard({ icon, title, description, tags, href }) {
+  return (
+    <Link href={href} style={{ textDecoration: "none" }}>
+      <div
+        style={{ background: "#fff", border: "1px solid #efefef", borderRadius: "8px", padding: "1.8rem", height: "100%", transition: "border-color 0.2s, transform 0.2s", cursor: "pointer" }}
+        onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#0a7c52"; e.currentTarget.style.transform = "translateY(-2px)"; }}
+        onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#efefef"; e.currentTarget.style.transform = "translateY(0)"; }}
+      >
+        <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>{icon}</div>
+        <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.5rem" }}>{title}</h3>
+        <p style={{ fontSize: "0.85rem", color: "#666", lineHeight: "1.75", marginBottom: "1.2rem" }}>{description}</p>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div style={{ display: "flex", gap: "0.4rem" }}>
+            {tags.map((tag) => (
+              <span key={tag} style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", background: "#f0f8f5", color: "#064d33", padding: "3px 10px", borderRadius: "20px" }}>
+                {tag}
+              </span>
+            ))}
+          </div>
+          <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#0a7c52" }}>View →</span>
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+function HexPhoto() {
+  const dot = (style) => (
+    <div style={{ position: "absolute", width: "8px", height: "8px", borderRadius: "50%", background: "#0a7c52", ...style }} />
+  );
+  return (
+    <div style={{ position: "relative", width: "300px", height: "340px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+      <svg style={{ position: "absolute", width: "340px", height: "380px", top: "50%", left: "50%", transform: "translate(-50%,-50%)" }} viewBox="0 0 340 380" fill="none">
+        <polygon points="170,10 326,80 326,300 170,370 14,300 14,80" stroke="#0a7c52" strokeWidth="1.5" strokeDasharray="8 5" fill="none" opacity="0.45"/>
+        <polygon points="170,24 312,88 312,292 170,356 28,292 28,88" stroke="#0a7c52" strokeWidth="0.8" fill="none" opacity="0.2"/>
+        {[["170","10"],["326","80"],["326","300"],["170","370"],["14","300"],["14","80"]].map(([cx,cy],i) => (
+          <circle key={i} cx={cx} cy={cy} r="5" fill="#0a7c52" opacity={i%2===0?"1":"0.5"}/>
+        ))}
+      </svg>
+      <div style={{
+        width: "280px", height: "320px",
+        clipPath: "polygon(50% 0%,100% 22%,100% 78%,50% 100%,0% 78%,0% 22%)",
+        overflow: "hidden", position: "relative", zIndex: 2,
+      }}>
+        <img src="/krithika.jpg" alt="Krithika Suwarna" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
+      </div>
+      {dot({ top: "-4px", left: "50%", transform: "translateX(-50%)", zIndex: 3 })}
+      {dot({ bottom: "-4px", left: "50%", transform: "translateX(-50%)", zIndex: 3 })}
+      {dot({ top: "22%", left: "-4px", zIndex: 3, width: "6px", height: "6px", background: "#d4ede5", border: "2px solid #0a7c52" })}
+      {dot({ top: "22%", right: "-4px", zIndex: 3, width: "6px", height: "6px", background: "#d4ede5", border: "2px solid #0a7c52" })}
+      {dot({ bottom: "22%", left: "-4px", zIndex: 3, width: "6px", height: "6px" })}
+      {dot({ bottom: "22%", right: "-4px", zIndex: 3, width: "6px", height: "6px" })}
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <main style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", background: "#f4f8f6", minHeight: "100vh", color: "#0d1f18" }}>
 
       <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.4rem 3.5rem", borderBottom: "1px solid rgba(10,124,82,0.2)", background: "#f4f8f6" }}>
-        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.5rem", fontWeight: 600, letterSpacing: "0.02em" }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.5rem", fontWeight: 600 }}>
           Krithika<span style={{ color: "#0a7c52" }}>.</span>S
         </div>
         <div style={{ display: "flex", gap: "2.5rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase" }}>
@@ -52,33 +104,37 @@ export default function Home() {
         </a>
       </nav>
 
-      <section style={{ padding: "6rem 3.5rem 5rem", maxWidth: "820px" }}>
-        <div style={{ display: "flex", gap: "0.6rem", marginBottom: "2rem", flexWrap: "wrap" }}>
-          {["AI Engineer", "Data Scientist", "Developer"].map((t, i) => (
-            <span key={t} style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", padding: "5px 14px", borderRadius: "20px", background: i === 0 ? "#d4ede5" : "#e8f4f0", color: "#064d33" }}>{t}</span>
-          ))}
+      <section style={{ display: "grid", gridTemplateColumns: "1fr auto", gap: "4rem", alignItems: "center", padding: "5rem 3.5rem 4rem" }}>
+        <div>
+          <div style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "1.2rem", display: "flex", alignItems: "center", gap: "0.6rem" }}>
+            <span style={{ width: "24px", height: "1.5px", background: "#0a7c52", display: "inline-block" }} />
+            AI Engineer & Data Scientist
+          </div>
+          <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(3rem, 6vw, 5rem)", lineHeight: "1.05", fontWeight: 600, letterSpacing: "-0.01em", marginBottom: "1.5rem" }}>
+            I build<br />
+            <em style={{ color: "#0a7c52", fontStyle: "italic" }}>intelligent</em><br />
+            tools & models<br />
+            that matter.
+          </h1>
+          <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", maxWidth: "460px", marginBottom: "2.5rem" }}>
+            From machine learning pipelines to full-stack AI applications — I turn complex data into products people actually use.
+          </p>
+          <div style={{ display: "flex", gap: "1rem", alignItems: "center", marginBottom: "2.5rem" }}>
+            <a href="#projects" style={{ background: "#0a7c52", color: "#fff", padding: "0.9rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>View my work</a>
+            <a href="#about" style={{ color: "#0a7c52", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>About me →</a>
+          </div>
+          <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+            {skills.map((s) => (
+              <span key={s} style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", background: "#d4ede5", color: "#064d33", padding: "4px 12px", borderRadius: "20px" }}>{s}</span>
+            ))}
+          </div>
         </div>
-        <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(3.5rem, 7vw, 5.5rem)", lineHeight: "1.05", letterSpacing: "-0.01em", marginBottom: "2rem", fontWeight: 600 }}>
-          I build intelligent<br />
-          <em style={{ color: "#0a7c52", fontStyle: "italic" }}>tools & models</em><br />
-          that matter.
-        </h1>
-        <p style={{ fontSize: "1.05rem", color: "#3a5a4a", lineHeight: "1.85", maxWidth: "500px", marginBottom: "3rem" }}>
-          From machine learning pipelines to full-stack AI applications — I turn complex data into products people actually use.
-        </p>
-        <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-          <a href="#projects" style={{ background: "#0a7c52", color: "#fff", padding: "0.9rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>
-            View my work
-          </a>
-          <a href="#about" style={{ color: "#0a7c52", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>
-            About me →
-          </a>
-        </div>
+        <HexPhoto />
       </section>
 
       <div style={{ borderTop: "1px solid rgba(10,124,82,0.2)", borderBottom: "1px solid rgba(10,124,82,0.2)", padding: "1rem 3.5rem", display: "flex", gap: "1.5rem", flexWrap: "wrap", alignItems: "center", background: "#edf5f1" }}>
         {skills.map((s, i) => (
-          <span key={s} style={{ display: "flex", alignItems: "center", gap: "0.6rem", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#064d33" }}>
+          <span key={s} style={{ display: "flex", alignItems: "center", gap: "0.6rem", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#064d33" }}>
             {i > 0 && <span style={{ color: "#0a7c52", opacity: 0.4 }}>◆</span>}
             {s}
           </span>
@@ -89,14 +145,12 @@ export default function Home() {
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "3rem" }}>
           <div>
             <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Selected work</p>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, letterSpacing: "-0.01em" }}>Featured Projects</h2>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600 }}>Featured Projects</h2>
           </div>
           <a href="#" style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "#0a7c52", textDecoration: "none", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>View all →</a>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.5rem" }}>
-          {projects.map((p) => (
-            <ProjectCard key={p.id} {...p} />
-          ))}
+          {projects.map((p) => <ProjectCard key={p.id} {...p} />)}
         </div>
       </section>
 
