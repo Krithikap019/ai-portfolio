@@ -233,7 +233,7 @@ export default function Home() {
 
       <section style={{ display: "grid", gridTemplateColumns: "1.6fr 1fr", gap: "2rem", alignItems: "center", padding: "5rem 3.5rem 4rem" }}>
         <div>
-          <div style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.5rem", display: "flex", alignItems: "center", gap: "0.6rem" }}>
+          <div style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.5rem", display: "flex", alignItems: "center", gap: "0.6rem" }}>
             <span style={{ width: "24px", height: "1.5px", background: "#0a7c52", display: "inline-block" }} />
             Data Scientist · AI Engineer · Developer
           </div>
