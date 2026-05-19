@@ -4,21 +4,13 @@ import Link from "next/link";
 const projects = [
   {
   id: "conversation",
-  icon: "🧠",
+  icon: "🤖",
   title: "Conversation Intelligence",
   description: "AI-powered system that analyzes conversations using NLP and transformer models to extract insights, detect intent and sentiment.",
   tags: ["Python", "Streamlit", "NLP"],
   color: "#0a7c52",
-  href: "https://ai-conversation-intelligence.streamlit.app/",
+  href: "/projects/conversation",
 },
-  {
-    id: "chat",
-    icon: "🤖",
-    title: "AI Chat Assistant",
-    description: "Claude-powered chatbot with memory, custom personas, and Markdown rendering.",
-    tags: ["Claude API", "Next.js"],
-    href: "/projects/chat",
-  },
   {
     id: "image",
     icon: "🎨",
@@ -63,7 +55,7 @@ function ProjectCard({ icon, title, description, tags, color, href }) {
               </span>
             ))}
           </div>
-          <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#0a7c52" }}>{isExternal ? "View app →" : "View →"}</span>
+          <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#0a7c52" }}>{isExternal ? "View →" : "View →"}</span>
         </div>
       </div>
     </Wrapper>
