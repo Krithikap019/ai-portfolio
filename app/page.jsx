@@ -243,7 +243,7 @@ export default function Home() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.5rem, 3vw, 2.5rem)", lineHeight: "1.1", fontWeight: 600, letterSpacing: "-0.01em", marginBottom: "1.5rem", color: "#0d1f18" }}>
             I build <em style={{ color: "#0a7c52", fontStyle: "italic" }}>intelligent</em> tools & models that matter.
           </h2>
-          <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", maxWidth: "720px", marginBottom: "2.5rem", marginTop: "2rem" }}>
+          <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", maxWidth: "720px", marginBottom: "2.5rem", marginTop: "5rem" }}>
             From machine learning pipelines to full-stack AI applications — I turn complex data into products people actually use. With experience across top tech companies like VMware and BroadCom, and a Master's in Business Analytics from UC San Diego, I bring both technical depth and business thinking to every problem I solve.
           </p>
           <div style={{ display: "flex", gap: "1rem", alignItems: "center", marginBottom: "2.5rem" }}>
