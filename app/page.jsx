@@ -38,7 +38,7 @@ function ExperienceTimeline() {
   const experiences = [
     {
       id: 0, role: "Research Scientist", company: "UCSD Empathy & Emotion Lab", location: "San Diego, CA",
-      period: "Dec 2021–Present", type: "Full-time", side: "left",
+      period: "Dec 2025–Present", type: "Full-time", side: "left",
       desc: "Conducting AI-driven research on human emotion and empathy using experimentation and predictive modeling. Developing machine learning models to analyze behavioral patterns and build intelligent systems that understand human affect.",
       tags: ["AI", "Experimentation", "Predictive Modeling", "Python"],
     },
@@ -56,25 +56,19 @@ function ExperienceTimeline() {
     },
     {
       id: 3, role: "R&D Engineer 2", company: "BroadCom", location: "Bangalore, India",
-      period: "Nov 2023–Jun 2024", type: "Full-time", side: "right",
+      period: "Jul 2021–Jun 2024", type: "Full-time", side: "right",
       desc: "Designed and optimized research pipelines for high-performance networking systems. Contributed to distributed infrastructure components and improved system reliability across production environments.",
       tags: ["Python", "Systems", "Networking", "Infrastructure"],
     },
     {
-      id: 4, role: "Member of Technical Staff 2", company: "VMware", location: "Bangalore, India",
-      period: "Jul 2021–Nov 2023", type: "Full-time", side: "left",
-      desc: "Led feature development for cloud infrastructure and virtualization tools. Collaborated cross-functionally to ship platform improvements and contributed to internal developer tooling used by thousands of engineers.",
-      tags: ["Cloud", "Java", "Virtualization", "Platform"],
-    },
-    {
       id: 5, role: "R&D Intern", company: "VMware", location: "Bangalore, India",
-      period: "Jan–Jul 2021", type: "Intern", side: "right",
+      period: "Jan–Jul 2021", type: "Intern", side: "left",
       desc: "Contributed to research and development of cloud-native features and internal automation tooling. Gained hands-on experience with distributed systems and agile engineering practices.",
       tags: ["Cloud", "Automation", "Python", "Agile"],
     },
     {
       id: 6, role: "Full Stack Development Intern", company: "QtPi", location: "Bangalore, India",
-      period: "May–Jul 2019", type: "Intern", side: "left",
+      period: "May–Jul 2019", type: "Intern", side: "right",
       desc: "Built and deployed full-stack web features for an ed-tech platform. Worked across frontend and backend systems to deliver interactive learning experiences for students.",
       tags: ["React", "Node.js", "Full Stack", "Ed-Tech"],
     },
@@ -315,7 +309,7 @@ export default function Home() {
       <section style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Academic</p>
         <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, marginBottom: "2rem" }}>Education</h2>
-        <div style={{ position: "relative", paddingLeft: "1.8rem", maxWidth: "700px", margin: "0 auto 0 8rem" }}>
+        <div style={{ position: "relative", paddingLeft: "1.8rem" }}>
           <div style={{ position: "absolute", left: "7px", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.25)" }} />
           {[
             {
