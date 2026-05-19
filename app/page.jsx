@@ -37,22 +37,34 @@ function ExperienceTimeline() {
 
   const experiences = [
     {
+      id: 0, role: "Research Scientist", company: "UCSD Empathy & Emotion Lab", location: "San Diego, CA",
+      period: "Dec 2021–Present", type: "Full-time", side: "left",
+      desc: "Conducting AI-driven research on human emotion and empathy using experimentation and predictive modeling. Developing machine learning models to analyze behavioral patterns and build intelligent systems that understand human affect.",
+      tags: ["AI", "Experimentation", "Predictive Modeling", "Python"],
+    },
+    {
       id: 1, role: "Data Scientist", company: "Experian", location: "San Diego, CA",
-      period: "Mar–Jun 2025", type: "Intern", side: "left",
+      period: "Mar–Jun 2025", type: "Intern", side: "right",
       desc: "Developed predictive models to identify high-value customer segments and optimize marketing campaign targeting. Built end-to-end ML pipelines using XGBoost and Python to drive QuickBooks upgrade decisions.",
       tags: ["XGBoost", "Python", "ML", "Regression"],
     },
     {
       id: 2, role: "Business Analyst", company: "Big Table", location: "San Diego, CA",
-      period: "Feb–May 2025", type: "Intern", side: "right",
+      period: "Feb–May 2025", type: "Intern", side: "left",
       desc: "Analyzed large-scale business datasets to surface actionable insights for product and revenue strategy. Created dashboards and reports to support data-driven decision-making across teams.",
       tags: ["SQL", "Tableau", "Data Analysis", "Dashboards"],
     },
     {
       id: 3, role: "R&D Engineer 2", company: "BroadCom", location: "Bangalore, India",
-      period: "Jul 2021–Jun 2024", type: "Full-time", side: "left",
+      period: "Nov 2023–Jun 2024", type: "Full-time", side: "right",
       desc: "Designed and optimized research pipelines for high-performance networking systems. Contributed to distributed infrastructure components and improved system reliability across production environments.",
       tags: ["Python", "Systems", "Networking", "Infrastructure"],
+    },
+    {
+      id: 4, role: "Member of Technical Staff 2", company: "VMware", location: "Bangalore, India",
+      period: "Jul 2021–Nov 2023", type: "Full-time", side: "left",
+      desc: "Led feature development for cloud infrastructure and virtualization tools. Collaborated cross-functionally to ship platform improvements and contributed to internal developer tooling used by thousands of engineers.",
+      tags: ["Cloud", "Java", "Virtualization", "Platform"],
     },
     {
       id: 5, role: "R&D Intern", company: "VMware", location: "Bangalore, India",
@@ -81,14 +93,14 @@ function ExperienceTimeline() {
 
   const renderContent = (exp) => (
     <>
-      <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.2rem" }}>{exp.role}</h3>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.2rem" }}>
+        <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18" }}>{exp.role}</h3>
+        <span style={{ fontSize: "0.72rem", color: "#3a5a4a", flexShrink: 0, marginLeft: "1rem", paddingTop: "0.3rem" }}>{exp.period}</span>
+      </div>
       <p style={{ fontSize: "1rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.3rem" }}>{exp.company}</p>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: selected === exp.id ? "0" : "0" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <p style={{ fontSize: "0.78rem", color: "#888" }}>{exp.location}</p>
-        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-          <span style={{ fontSize: "0.72rem", color: "#3a5a4a" }}>{exp.period}</span>
-          <span style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33", border: "1px solid rgba(10,124,82,0.2)" }}>{exp.type}</span>
-        </div>
+        <span style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33", border: "1px solid rgba(10,124,82,0.2)" }}>{exp.type}</span>
       </div>
       {selected === exp.id && (
         <div style={{ marginTop: "0.8rem", paddingTop: "0.8rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
@@ -299,42 +311,42 @@ export default function Home() {
         <ExperienceTimeline />
       </section>
 
-      {/* Education */}
+{/* Education */}
       <section style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Academic</p>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, marginBottom: "3rem" }}>Education</h2>
-        <div style={{ position: "relative", paddingLeft: "2rem" }}>
-          <div style={{ position: "absolute", left: "6px", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.2)" }} />
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, marginBottom: "2rem" }}>Education</h2>
+        <div style={{ position: "relative", paddingLeft: "1.8rem", maxWidth: "700px", margin: "0 auto 0 8rem" }}>
+          <div style={{ position: "absolute", left: "7px", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.25)" }} />
           {[
             {
               school: "University of San Diego, California",
               degree: "Master of Science in Business Analytics",
               period: "Jul 2024 – Dec 2025",
-              coursework: "Customer Analytics, Web Mining, Recommender Systems, Large Data Analysis, SQL & ETL, Statistics, Business Intelligence, Scalable Analytics",
+              courses: ["Customer Analytics", "Web Mining", "Recommender Systems", "Large Data Analysis", "SQL & ETL", "Statistics", "Business Intelligence", "Scalable Analytics", "Experiments for Business Analytics"],
             },
             {
               school: "PES University, Bangalore, India",
               degree: "B-Tech in Computer Science — Data Science Specialisation",
               period: "Aug 2017 – May 2021",
-              coursework: "Data Analytics, Machine Learning, Big Data, Cloud Computing, Algorithms, OOP, Linear Algebra, Web Technologies, Operating Systems",
+              courses: ["Data Analytics", "Machine Learning", "Big Data", "Cloud Computing", "Algorithms", "OOP", "Linear Algebra", "Web Technologies", "Operating Systems", "Software Testing"],
             },
           ].map((edu, i) => (
-            <div key={i} style={{ position: "relative", marginBottom: "2rem", paddingLeft: "2rem" }}>
-              <div style={{ position: "absolute", left: "-1.65rem", top: "6px", width: "12px", height: "12px", borderRadius: "50%", background: "#0a7c52", border: "3px solid #f4f8f6", zIndex: 1 }} />
-              <div style={{ background: "#fff", border: "1px solid #efefef", borderRadius: "8px", padding: "1.4rem 1.5rem", transition: "border-color 0.2s, transform 0.2s" }}
-                onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#0a7c52"; e.currentTarget.style.transform = "translateX(4px)"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#efefef"; e.currentTarget.style.transform = "translateX(0)"; }}
-              >
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.8rem" }}>
-                  <div>
-                    <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", fontWeight: 600, marginBottom: "0.3rem" }}>{edu.school}</h3>
-                    <p style={{ fontSize: "0.88rem", fontWeight: 700, color: "#0a7c52" }}>{edu.degree}</p>
-                  </div>
-                  <span style={{ fontSize: "0.75rem", color: "#3a5a4a", flexShrink: 0, marginLeft: "2rem" }}>{edu.period}</span>
+            <div key={i} style={{ position: "relative", marginBottom: "2rem" }}>
+              <div style={{ position: "absolute", left: "-1.55rem", top: "8px", width: "14px", height: "14px", borderRadius: "50%", background: "#0a7c52", zIndex: 1 }} />
+              <div style={{ background: "#fff", border: "1px solid rgba(10,124,82,0.12)", borderRadius: "8px", padding: "1.5rem" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.3rem" }}>
+                  <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6rem", fontWeight: 600, color: "#0d1f18" }}>{edu.school}</h3>
+                  <span style={{ fontSize: "0.75rem", color: "#3a5a4a", flexShrink: 0, marginLeft: "1rem", paddingTop: "0.3rem" }}>{edu.period}</span>
                 </div>
-                <p style={{ fontSize: "0.78rem", color: "#888", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: 700, color: "#3a5a4a" }}>Coursework: </span>{edu.coursework}
-                </p>
+                <p style={{ fontSize: "1.1rem", fontWeight: 700, color: "#0a7c52", marginBottom: "1rem" }}>{edu.degree}</p>
+                <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#888", marginBottom: "0.6rem" }}>Coursework</p>
+                <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
+                  {edu.courses.map((course) => (
+                    <span key={course} style={{ fontSize: "0.68rem", fontWeight: 600, padding: "4px 10px", borderRadius: "20px", background: "#edf5f1", color: "#064d33", border: "1px solid rgba(10,124,82,0.15)" }}>
+                      {course}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
