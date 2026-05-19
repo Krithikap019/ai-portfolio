@@ -184,26 +184,49 @@ export default function Home() {
       {/* Experience */}
       <section style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Work</p>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, marginBottom: "2rem" }}>Experience</h2>
-        <div style={{ position: "relative", paddingLeft: "1.8rem", maxWidth: "700px", margin: "0 auto 0 8rem" }}>
-          <div style={{ position: "absolute", left: "7px", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.25)" }} />
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, marginBottom: "3rem", textAlign: "center" }}>Experience</h2>
+        <div style={{ position: "relative", maxWidth: "800px", margin: "0 auto" }}>
+          <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.25)", transform: "translateX(-50%)" }} />
           {[
-            { company: "Experian", role: "Data Scientist", location: "San Diego, CA", period: "Mar–Jun 2025", type: "Intern" },
-            { company: "Big Table", role: "Business Analyst", location: "San Diego, CA", period: "Feb–May 2025", type: "Intern" },
-            { company: "BroadCom", role: "R&D Engineer 2", location: "Bangalore", period: "Nov 2023–Jun 2024", type: "Full-time" },
-            { company: "VMware", role: "Member of Technical Staff 2", location: "Bangalore", period: "Jul 2021–Nov 2023", type: "Full-time" },
-            { company: "VMware", role: "R&D Intern", location: "Bangalore", period: "Jan–Jul 2021", type: "Intern" },
-            { company: "QtPi", role: "Full Stack Development Intern", location: "Bangalore", period: "May–Jul 2019", type: "Intern" },
+            { company: "Experian", role: "Data Scientist", location: "San Diego, CA", period: "Mar–Jun 2025", type: "Intern", side: "left" },
+            { company: "Big Table", role: "Business Analyst", location: "San Diego, CA", period: "Feb–May 2025", type: "Intern", side: "right" },
+            { company: "BroadCom", role: "R&D Engineer 2", location: "Bangalore, India", period: "Nov 2023–Jun 2024", type: "Full-time", side: "left" },
+            { company: "VMware", role: "Member of Technical Staff 2", location: "Bangalore, India", period: "Jul 2021–Nov 2023", type: "Full-time", side: "right" },
+            { company: "VMware", role: "R&D Intern", location: "Bangalore, India", period: "Jan–Jul 2021", type: "Intern", side: "left" },
+            { company: "QtPi", role: "Full Stack Development Intern", location: "Bangalore, India", period: "May–Jul 2019", type: "Intern", side: "right" },
           ].map((exp, i) => (
-            <div key={i} style={{ position: "relative", marginBottom: "2rem" }}>
-              <div style={{ position: "absolute", left: "-1.55rem", top: "8px", width: "14px", height: "14px", borderRadius: "50%", background: "#0a7c52", zIndex: 1 }} />
-              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.2rem" }}>{exp.role}</h3>
-              <p style={{ fontSize: "1rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.3rem" }}>{exp.company}</p>
-              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
-                <span style={{ fontSize: "0.85rem", color: "#888" }}>{exp.location}</span>
-                <span style={{ fontSize: "0.85rem", color: "#ccc" }}>·</span>
-                <span style={{ fontSize: "0.85rem", color: "#888" }}>{exp.period}</span>
-                <span style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "2px 10px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "transparent", color: "#064d33" }}>{exp.type}</span>
+            <div key={i} style={{ display: "grid", gridTemplateColumns: "1fr 40px 1fr", gap: "0 1rem", marginBottom: "2rem", alignItems: "start" }}>
+              {/* Left content or empty */}
+              <div style={{ textAlign: "right", paddingRight: "1rem", paddingTop: "0.2rem" }}>
+                {exp.side === "left" && (
+                  <>
+                    <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.2rem" }}>{exp.role}</h3>
+                    <p style={{ fontSize: "0.9rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.2rem" }}>{exp.company}</p>
+                    <p style={{ fontSize: "0.78rem", color: "#888", marginBottom: "0.3rem" }}>{exp.location}</p>
+                    <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", gap: "0.5rem" }}>
+                      <span style={{ fontSize: "0.72rem", color: "#3a5a4a" }}>{exp.period}</span>
+                      <span style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33", border: "1px solid rgba(10,124,82,0.2)" }}>{exp.type}</span>
+                    </div>
+                  </>
+                )}
+              </div>
+              {/* Center dot */}
+              <div style={{ display: "flex", justifyContent: "center", paddingTop: "0.4rem" }}>
+                <div style={{ width: "14px", height: "14px", borderRadius: "50%", background: "#0a7c52", border: "3px solid #f4f8f6", zIndex: 1, flexShrink: 0 }} />
+              </div>
+              {/* Right content or empty */}
+              <div style={{ paddingLeft: "1rem", paddingTop: "0.2rem" }}>
+                {exp.side === "right" && (
+                  <>
+                    <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.2rem" }}>{exp.role}</h3>
+                    <p style={{ fontSize: "0.9rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.2rem" }}>{exp.company}</p>
+                    <p style={{ fontSize: "0.78rem", color: "#888", marginBottom: "0.3rem" }}>{exp.location}</p>
+                    <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                      <span style={{ fontSize: "0.72rem", color: "#3a5a4a" }}>{exp.period}</span>
+                      <span style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33", border: "1px solid rgba(10,124,82,0.2)" }}>{exp.type}</span>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           ))}
