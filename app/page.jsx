@@ -237,7 +237,7 @@ export default function Home() {
             I build <em style={{ color: "#0a7c52", fontStyle: "italic" }}>intelligent</em> tools & models that matter.
           </h2>
           <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", maxWidth: "600px", marginBottom: "2.5rem" }}>
-            From machine learning pipelines to full-stack AI applications — I turn complex data into products people actually use.
+            From machine learning pipelines to full-stack AI applications — I turn complex data into products people actually use. With experience across top tech companies like VMware and BroadCom, and a Master's in Business Analytics from UC San Diego, I bring both technical depth and business thinking to every problem I solve.
           </p>
           <div style={{ display: "flex", gap: "1rem", alignItems: "center", marginBottom: "2.5rem" }}>
             <a href="#projects" style={{ background: "#0a7c52", color: "#fff", padding: "0.9rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>View my work</a>
