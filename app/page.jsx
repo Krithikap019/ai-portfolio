@@ -133,7 +133,9 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <HexPhoto />
+        <div style={{ display: "flex", justifyContent: "flex-end", paddingRight: "2rem" }}>
+          <HexPhoto />
+        </div>
       </section>
 
       <div style={{ borderTop: "1px solid rgba(10,124,82,0.2)", borderBottom: "1px solid rgba(10,124,82,0.2)", padding: "1rem 3.5rem", display: "flex", gap: "1.5rem", flexWrap: "wrap", alignItems: "center", background: "#edf5f1" }}>
