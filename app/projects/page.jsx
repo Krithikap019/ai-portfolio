@@ -44,7 +44,7 @@ export default function AllProjects() {
         <Link href="/" style={{ color: "#0a7c52", textDecoration: "none", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>← Back home</Link>
       </nav>
 
-      <div style={{ display: "grid", gridTemplateColumns: "220px 1fr", minHeight: "calc(100vh - 72px)" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "240px 1fr", minHeight: "calc(100vh - 72px)" }}>
 
         {/* Sidebar */}
         <div style={{ borderRight: "1px solid rgba(10,124,82,0.15)", padding: "3rem 2rem", background: "#fff" }}>
@@ -55,21 +55,21 @@ export default function AllProjects() {
               return (
                 <button key={cat} onClick={() => setActive(cat)} style={{
                   display: "flex", justifyContent: "space-between", alignItems: "center",
-                  padding: "0.6rem 0.8rem", borderRadius: "6px", cursor: "pointer",
+                  padding: "0.7rem 0.9rem", borderRadius: "6px", cursor: "pointer",
                   border: "none", textAlign: "left", transition: "all 0.2s",
                   background: active === cat ? "#edf5f1" : "transparent",
                   borderLeft: active === cat ? "3px solid #0a7c52" : "3px solid transparent",
                 }}>
-                  <span style={{ fontSize: "0.8rem", fontWeight: active === cat ? 700 : 500, color: active === cat ? "#0a7c52" : "#3a5a4a" }}>{cat}</span>
-                  <span style={{ fontSize: "0.65rem", fontWeight: 700, color: active === cat ? "#0a7c52" : "#aaa" }}>{count}</span>
+                  <span style={{ fontSize: "0.85rem", fontWeight: active === cat ? 700 : 500, color: active === cat ? "#0a7c52" : "#3a5a4a" }}>{cat}</span>
+                  <span style={{ fontSize: "0.7rem", fontWeight: 700, color: active === cat ? "#0a7c52" : "#aaa" }}>{count}</span>
                 </button>
               );
             })}
           </div>
 
-          <div style={{ marginTop: "3rem", padding: "1.2rem", background: "#0a7c52", borderRadius: "8px" }}>
+          <div style={{ marginTop: "3rem", padding: "1.4rem", background: "#0a7c52", borderRadius: "8px" }}>
             <p style={{ fontSize: "0.7rem", fontWeight: 700, color: "#fff", marginBottom: "0.3rem" }}>Total Projects</p>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.5rem", fontWeight: 600, color: "#fff", lineHeight: 1 }}>{projects.length}</p>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, color: "#fff", lineHeight: 1 }}>{projects.length}</p>
           </div>
         </div>
 
@@ -85,29 +85,29 @@ export default function AllProjects() {
           </div>
 
           {/* List */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-            {filtered.map((p, i) => (
+          <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+            {filtered.map((p) => (
               <Link key={p.id} href={p.link} style={{ textDecoration: "none" }}>
                 <div
-                  style={{ display: "grid", gridTemplateColumns: "48px 1fr auto", gap: "1.2rem", alignItems: "center", background: "#fff", border: "1px solid #efefef", borderRadius: "8px", padding: "1.2rem 1.5rem", transition: "border-color 0.2s, transform 0.2s", cursor: "pointer" }}
+                  style={{ display: "grid", gridTemplateColumns: "70px 1fr auto", gap: "1.5rem", alignItems: "center", background: "#fff", border: "1px solid #efefef", borderRadius: "8px", padding: "1.8rem 2rem", transition: "border-color 0.2s, transform 0.2s", cursor: "pointer" }}
                   onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#0a7c52"; e.currentTarget.style.transform = "translateX(4px)"; }}
                   onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#efefef"; e.currentTarget.style.transform = "translateX(0)"; }}
                 >
-                  <div style={{ width: "48px", height: "48px", borderRadius: "8px", background: catColors[p.cat]?.bg || "#d4ede5", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4rem", flexShrink: 0 }}>
+                  <div style={{ width: "60px", height: "60px", borderRadius: "10px", background: catColors[p.cat]?.bg || "#d4ede5", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.6rem", flexShrink: 0 }}>
                     {p.icon}
                   </div>
                   <div>
-                    <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.3rem" }}>{p.title}</h3>
+                    <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.5rem", lineHeight: "1.3" }}>{p.title}</h3>
                     <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", flexWrap: "wrap" }}>
-                      <span style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: catColors[p.cat]?.bg || "#d4ede5", color: catColors[p.cat]?.color || "#064d33" }}>
+                      <span style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "3px 10px", borderRadius: "20px", background: catColors[p.cat]?.bg || "#d4ede5", color: catColors[p.cat]?.color || "#064d33" }}>
                         {p.cat}
                       </span>
                       {p.tags.map((tag) => (
-                        <span key={tag} style={{ fontSize: "0.6rem", fontWeight: 600, color: "#888" }}>{tag}</span>
+                        <span key={tag} style={{ fontSize: "0.72rem", fontWeight: 600, color: "#888" }}>{tag}</span>
                       ))}
                     </div>
                   </div>
-                  <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#0a7c52", flexShrink: 0 }}>View →</span>
+                  <span style={{ fontSize: "0.82rem", fontWeight: 700, color: "#0a7c52", flexShrink: 0 }}>View →</span>
                 </div>
               </Link>
             ))}
