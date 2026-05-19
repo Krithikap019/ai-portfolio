@@ -8,6 +8,12 @@ export default function FinancialAnalyzer() {
         <div style={{ fontFamily: "'Raleway', sans-serif", fontSize: "1.2rem", fontWeight: 300, letterSpacing: "0.09em" }}>
           Krithika<span style={{ color: "#0a7c52" }}> </span>Suwarna
         </div>
+        <div style={{ display: "flex", gap: "2.5rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+        <Link href="/projects" style={{ color: "#0d1f18", textDecoration: "none" }}>Projects</Link>
+        <Link href="/#about" style={{ color: "#0d1f18", textDecoration: "none" }}>About</Link>
+        <Link href="/#experience" style={{ color: "#0d1f18", textDecoration: "none" }}>Experience</Link>
+        <Link href="/#contact" style={{ color: "#0d1f18", textDecoration: "none" }}>Contact</Link>
+        </div>
         <Link href="/" style={{ color: "#0a7c52", textDecoration: "none", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>← Back home</Link>
       </nav>
 
