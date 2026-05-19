@@ -256,7 +256,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div style={{ borderTop: "1px solid rgba(10,124,82,0.2)", borderBottom: "1px solid rgba(10,124,82,0.2)", padding: "1rem 3.5rem", display: "flex", gap: "1.5rem", flexWrap: "wrap", alignItems: "center", background: "#edf5f1" }}>
+      <div style={{ borderTop: "1px solid rgba(10,124,82,0.2)", borderBottom: "1px solid rgba(10,124,82,0.2)", padding: "1rem 3.5rem", display: "flex", gap: "1.5rem", flexWrap: "nowrap", alignItems: "center", background: "#edf5f1", overflowX: "auto", whiteSpace: "nowrap" }}>
         {skills.map((s, i) => (
           <span key={s} style={{ display: "flex", alignItems: "center", gap: "0.6rem", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#064d33" }}>
             {i > 0 && <span style={{ color: "#0a7c52", opacity: 0.4 }}>◆</span>}
