@@ -58,30 +58,34 @@ function ProjectCard({ icon, title, description, tags, href }) {
 
 function HexPhoto() {
   const dot = (style) => (
-    <div style={{ position: "absolute", width: "8px", height: "8px", borderRadius: "50%", background: "#0a7c52", ...style }} />
+    <div style={{ position: "absolute", width: "10px", height: "10px", borderRadius: "50%", background: "#0a7c52", ...style }} />
   );
   return (
-    <div style={{ position: "relative", width: "300px", height: "340px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-      <svg style={{ position: "absolute", width: "340px", height: "380px", top: "50%", left: "50%", transform: "translate(-50%,-50%)" }} viewBox="0 0 340 380" fill="none">
-        <polygon points="170,10 326,80 326,300 170,370 14,300 14,80" stroke="#0a7c52" strokeWidth="1.5" strokeDasharray="8 5" fill="none" opacity="0.45"/>
-        <polygon points="170,24 312,88 312,292 170,356 28,292 28,88" stroke="#0a7c52" strokeWidth="0.8" fill="none" opacity="0.2"/>
-        {[["170","10"],["326","80"],["326","300"],["170","370"],["14","300"],["14","80"]].map(([cx,cy],i) => (
-          <circle key={i} cx={cx} cy={cy} r="5" fill="#0a7c52" opacity={i%2===0?"1":"0.5"}/>
+    <div style={{ position: "relative", width: "380px", height: "440px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+      <svg style={{ position: "absolute", width: "420px", height: "480px", top: "50%", left: "50%", transform: "translate(-50%,-50%)" }} viewBox="0 0 420 480" fill="none">
+        <polygon points="210,10 400,95 400,385 210,470 20,385 20,95" stroke="#0a7c52" strokeWidth="1.5" strokeDasharray="8 5" fill="none" opacity="0.45"/>
+        <polygon points="210,26 384,107 384,373 210,454 36,373 36,107" stroke="#0a7c52" strokeWidth="0.8" fill="none" opacity="0.2"/>
+        {[["210","10"],["400","95"],["400","385"],["210","470"],["20","385"],["20","95"]].map(([cx,cy],i) => (
+          <circle key={i} cx={cx} cy={cy} r="6" fill="#0a7c52" opacity={i%2===0?"1":"0.5"}/>
         ))}
       </svg>
       <div style={{
-        width: "280px", height: "320px",
-        clipPath: "polygon(50% 0%,100% 22%,100% 78%,50% 100%,0% 78%,0% 22%)",
-        overflow: "hidden", position: "relative", zIndex: 2,
+        width: "360px",
+        height: "420px",
+        clipPath: "polygon(50% 0%, 100% 22%, 100% 78%, 50% 100%, 0% 78%, 0% 22%)",
+        overflow: "hidden",
+        position: "relative",
+        zIndex: 2,
+        background: "#0a7c52",
       }}>
-        <img src="/krithika.jpg" alt="Krithika Suwarna" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
+        <img src="/krithika.jpg" alt="Krithika Suwarna" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }} />
       </div>
-      {dot({ top: "-4px", left: "50%", transform: "translateX(-50%)", zIndex: 3 })}
-      {dot({ bottom: "-4px", left: "50%", transform: "translateX(-50%)", zIndex: 3 })}
-      {dot({ top: "22%", left: "-4px", zIndex: 3, width: "6px", height: "6px", background: "#d4ede5", border: "2px solid #0a7c52" })}
-      {dot({ top: "22%", right: "-4px", zIndex: 3, width: "6px", height: "6px", background: "#d4ede5", border: "2px solid #0a7c52" })}
-      {dot({ bottom: "22%", left: "-4px", zIndex: 3, width: "6px", height: "6px" })}
-      {dot({ bottom: "22%", right: "-4px", zIndex: 3, width: "6px", height: "6px" })}
+      {dot({ top: "0px", left: "50%", transform: "translateX(-50%)", zIndex: 3 })}
+      {dot({ bottom: "0px", left: "50%", transform: "translateX(-50%)", zIndex: 3 })}
+      {dot({ top: "22%", left: "0px", zIndex: 3, width: "8px", height: "8px", background: "#d4ede5", border: "2px solid #0a7c52" })}
+      {dot({ top: "22%", right: "0px", zIndex: 3, width: "8px", height: "8px", background: "#d4ede5", border: "2px solid #0a7c52" })}
+      {dot({ bottom: "22%", left: "0px", zIndex: 3, width: "8px", height: "8px" })}
+      {dot({ bottom: "22%", right: "0px", zIndex: 3, width: "8px", height: "8px" })}
     </div>
   );
 }
@@ -104,19 +108,19 @@ export default function Home() {
         </a>
       </nav>
 
-      <section style={{ display: "grid", gridTemplateColumns: "1fr auto", gap: "4rem", alignItems: "center", padding: "5rem 3.5rem 4rem" }}>
+      <section style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr", gap: "2rem", alignItems: "center", padding: "5rem 3.5rem 4rem" }}>
         <div>
-          <div style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "1.2rem", display: "flex", alignItems: "center", gap: "0.6rem" }}>
+          <div style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.5rem", display: "flex", alignItems: "center", gap: "0.6rem" }}>
             <span style={{ width: "24px", height: "1.5px", background: "#0a7c52", display: "inline-block" }} />
             AI Engineer & Data Scientist
           </div>
-          <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(3rem, 6vw, 5rem)", lineHeight: "1.05", fontWeight: 600, letterSpacing: "-0.01em", marginBottom: "1.5rem" }}>
-            I build<br />
-            <em style={{ color: "#0a7c52", fontStyle: "italic" }}>intelligent</em><br />
-            tools & models<br />
-            that matter.
+          <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(4rem, 8vw, 7rem)", lineHeight: "1", fontWeight: 600, letterSpacing: "-0.02em", marginBottom: "0.3rem" }}>
+            Krithika Suwarna
           </h1>
-          <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", maxWidth: "460px", marginBottom: "2.5rem" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.5rem, 3vw, 2.5rem)", lineHeight: "1.1", fontWeight: 600, letterSpacing: "-0.01em", marginBottom: "1.5rem", color: "#0d1f18" }}>
+            I build <em style={{ color: "#0a7c52", fontStyle: "italic" }}>intelligent</em> tools & models that matter.
+          </h2>
+          <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", maxWidth: "600px", marginBottom: "2.5rem" }}>
             From machine learning pipelines to full-stack AI applications — I turn complex data into products people actually use.
           </p>
           <div style={{ display: "flex", gap: "1rem", alignItems: "center", marginBottom: "2.5rem" }}>
