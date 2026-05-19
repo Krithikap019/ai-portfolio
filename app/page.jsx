@@ -13,7 +13,7 @@ const projects = [
   href: "/projects/ai_conversation",
 },
 {
-    id: "summarizer",
+    id: "AI summarizer",
     icon: "📄",
     title: "AI Financial Report Analyzer",
     description: "Paste any text and get a clean, structured summary in seconds.",
