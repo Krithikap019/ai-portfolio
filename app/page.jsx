@@ -56,13 +56,13 @@ function ExperienceTimeline() {
     },
     {
       id: 5, role: "R&D Intern", company: "VMware", location: "Bangalore, India",
-      period: "Jan–Jul 2021", type: "Intern", side: "left",
+      period: "Jan–Jul 2021", type: "Intern", side: "right",
       desc: "Contributed to research and development of cloud-native features and internal automation tooling. Gained hands-on experience with distributed systems and agile engineering practices.",
       tags: ["Cloud", "Automation", "Python", "Agile"],
     },
     {
       id: 6, role: "Full Stack Development Intern", company: "QtPi", location: "Bangalore, India",
-      period: "May–Jul 2019", type: "Intern", side: "right",
+      period: "May–Jul 2019", type: "Intern", side: "left",
       desc: "Built and deployed full-stack web features for an ed-tech platform. Worked across frontend and backend systems to deliver interactive learning experiences for students.",
       tags: ["React", "Node.js", "Full Stack", "Ed-Tech"],
     },
