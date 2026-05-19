@@ -217,8 +217,8 @@ export default function Home() {
     <main style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", background: "#f4f8f6", minHeight: "100vh", color: "#0d1f18" }}>
 
       <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.4rem 3.5rem", borderBottom: "1px solid rgba(10,124,82,0.2)", background: "#f4f8f6" }}>
-        <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "1.8rem", letterSpacing: "0.05em" }}>
-        Krithika<span style={{ color: "#0a7c52" }}>.</span>S
+        <div style={{ fontFamily: "'Raleway', sans-serif", fontSize: "1.6rem", fontWeight: 300, letterSpacing: "0.12em" }}>
+        Krithika<span style={{ color: "#0a7c52" }}> </span>Suwarna
         </div>
         <div style={{ display: "flex", gap: "2.5rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase" }}>
           <Link href="#projects" style={{ color: "#0d1f18", textDecoration: "none" }}>Projects</Link>
