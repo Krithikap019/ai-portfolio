@@ -181,11 +181,12 @@ export default function Home() {
         </div>
       </section>
 
-            {/* Experience */}
+      {/* Experience */}
       <section style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Work</p>
         <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, marginBottom: "3rem" }}>Experience</h2>
-        <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+        <div style={{ position: "relative", paddingLeft: "2rem" }}>
+          <div style={{ position: "absolute", left: "6px", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.2)" }} />
           {[
             { company: "Experian", role: "Data Scientist", location: "San Diego, CA, US", period: "Mar 2025 → Jun 2025", type: "Internship" },
             { company: "Big Table", role: "Business Analyst", location: "San Diego, CA, US", period: "Feb 2025 → May 2025", type: "Internship" },
@@ -194,18 +195,23 @@ export default function Home() {
             { company: "VMware", role: "Research and Development Intern", location: "Bangalore, India", period: "Jan 2021 → Jul 2021", type: "Internship" },
             { company: "QtPi", role: "Full Stack Development Intern", location: "Bangalore, India", period: "May 2019 → Jul 2019", type: "Internship" },
           ].map((exp, i) => (
-            <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", padding: "1.5rem 2rem", background: "#fff", border: "1px solid #efefef", borderRadius: "8px", transition: "border-color 0.2s" }}
-              onMouseEnter={(e) => e.currentTarget.style.borderColor = "#0a7c52"}
-              onMouseLeave={(e) => e.currentTarget.style.borderColor = "#efefef"}
-            >
-              <div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 600, marginBottom: "0.3rem" }}>{exp.role}</h3>
-                <p style={{ fontSize: "0.9rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.2rem" }}>{exp.company}</p>
-                <p style={{ fontSize: "0.8rem", color: "#888" }}>{exp.location}</p>
-              </div>
-              <div style={{ textAlign: "right", flexShrink: 0, marginLeft: "2rem" }}>
-                <p style={{ fontSize: "0.78rem", color: "#3a5a4a", marginBottom: "0.5rem" }}>{exp.period}</p>
-                <span style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "3px 10px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33" }}>{exp.type}</span>
+            <div key={i} style={{ position: "relative", marginBottom: "2rem", paddingLeft: "2rem" }}>
+              <div style={{ position: "absolute", left: "-1.65rem", top: "6px", width: "12px", height: "12px", borderRadius: "50%", background: "#0a7c52", border: "3px solid #f4f8f6", zIndex: 1 }} />
+              <div style={{ background: "#fff", border: "1px solid #efefef", borderRadius: "8px", padding: "1.2rem 1.5rem", transition: "border-color 0.2s, transform 0.2s" }}
+                onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#0a7c52"; e.currentTarget.style.transform = "translateX(4px)"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#efefef"; e.currentTarget.style.transform = "translateX(0)"; }}
+              >
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+                  <div>
+                    <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", fontWeight: 600, marginBottom: "0.2rem" }}>{exp.role}</h3>
+                    <p style={{ fontSize: "0.88rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.2rem" }}>{exp.company}</p>
+                    <p style={{ fontSize: "0.78rem", color: "#888" }}>{exp.location}</p>
+                  </div>
+                  <div style={{ textAlign: "right", flexShrink: 0, marginLeft: "2rem" }}>
+                    <p style={{ fontSize: "0.75rem", color: "#3a5a4a", marginBottom: "0.4rem" }}>{exp.period}</p>
+                    <span style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "3px 10px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33" }}>{exp.type}</span>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
@@ -216,35 +222,39 @@ export default function Home() {
       <section style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Academic</p>
         <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, marginBottom: "3rem" }}>Education</h2>
-        <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+        <div style={{ position: "relative", paddingLeft: "2rem" }}>
+          <div style={{ position: "absolute", left: "6px", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.2)" }} />
           {[
             {
               school: "University of San Diego, California",
               degree: "Master of Science in Business Analytics",
               period: "Jul 2024 – Dec 2025",
-              coursework: "Customer Analytics, Web Mining and Recommender Systems, Analysing Large Data, SQL and ETL, Statistics for Business Analytics, Business Intelligence Systems, Scalable Analytics, Experiments for Business Analytics",
+              coursework: "Customer Analytics, Web Mining, Recommender Systems, Large Data Analysis, SQL & ETL, Statistics, Business Intelligence, Scalable Analytics",
             },
             {
               school: "PES University, Bangalore, India",
-              degree: "B-Tech in Computer Science and Engineering — Data Science Specialisation",
+              degree: "B-Tech in Computer Science — Data Science Specialisation",
               period: "Aug 2017 – May 2021",
-              coursework: "Data Analytics, Database Management, Data Science, Machine Learning, Data Structures and Algorithms, Quant Methods, Big Data, Cloud Computing, Design and Analysis of Algorithms, OOP, Linear Algebra, Web Technologies, Operating Systems, Software Testing",
+              coursework: "Data Analytics, Machine Learning, Big Data, Cloud Computing, Algorithms, OOP, Linear Algebra, Web Technologies, Operating Systems",
             },
           ].map((edu, i) => (
-            <div key={i} style={{ padding: "2rem", background: "#fff", border: "1px solid #efefef", borderRadius: "8px", transition: "border-color 0.2s" }}
-              onMouseEnter={(e) => e.currentTarget.style.borderColor = "#0a7c52"}
-              onMouseLeave={(e) => e.currentTarget.style.borderColor = "#efefef"}
-            >
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1rem" }}>
-                <div>
-                  <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 600, marginBottom: "0.3rem" }}>{edu.school}</h3>
-                  <p style={{ fontSize: "0.9rem", color: "#0a7c52", fontWeight: 600 }}>{edu.degree}</p>
+            <div key={i} style={{ position: "relative", marginBottom: "2rem", paddingLeft: "2rem" }}>
+              <div style={{ position: "absolute", left: "-1.65rem", top: "6px", width: "12px", height: "12px", borderRadius: "50%", background: "#0a7c52", border: "3px solid #f4f8f6", zIndex: 1 }} />
+              <div style={{ background: "#fff", border: "1px solid #efefef", borderRadius: "8px", padding: "1.4rem 1.5rem", transition: "border-color 0.2s, transform 0.2s" }}
+                onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#0a7c52"; e.currentTarget.style.transform = "translateX(4px)"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#efefef"; e.currentTarget.style.transform = "translateX(0)"; }}
+              >
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.8rem" }}>
+                  <div>
+                    <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", fontWeight: 600, marginBottom: "0.3rem" }}>{edu.school}</h3>
+                    <p style={{ fontSize: "0.88rem", fontWeight: 700, color: "#0a7c52" }}>{edu.degree}</p>
+                  </div>
+                  <span style={{ fontSize: "0.75rem", color: "#3a5a4a", flexShrink: 0, marginLeft: "2rem" }}>{edu.period}</span>
                 </div>
-                <span style={{ fontSize: "0.78rem", color: "#3a5a4a", flexShrink: 0, marginLeft: "2rem" }}>{edu.period}</span>
+                <p style={{ fontSize: "0.78rem", color: "#888", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: 700, color: "#3a5a4a" }}>Coursework: </span>{edu.coursework}
+                </p>
               </div>
-              <p style={{ fontSize: "0.82rem", color: "#888", lineHeight: "1.7" }}>
-                <span style={{ fontWeight: 700, color: "#3a5a4a" }}>Coursework: </span>{edu.coursework}
-              </p>
             </div>
           ))}
         </div>
