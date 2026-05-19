@@ -181,6 +181,75 @@ export default function Home() {
         </div>
       </section>
 
+            {/* Experience */}
+      <section style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
+        <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Work</p>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, marginBottom: "3rem" }}>Experience</h2>
+        <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+          {[
+            { company: "Experian", role: "Data Scientist", location: "San Diego, CA, US", period: "Mar 2025 → Jun 2025", type: "Internship" },
+            { company: "Big Table", role: "Business Analyst", location: "San Diego, CA, US", period: "Feb 2025 → May 2025", type: "Internship" },
+            { company: "BroadCom", role: "Research and Development Engineer 2", location: "Bangalore, India", period: "Nov 2023 → Jun 2024", type: "Full-time" },
+            { company: "VMware", role: "Member of Technical Staff 2", location: "Bangalore, India", period: "Jul 2021 → Nov 2023", type: "Full-time" },
+            { company: "VMware", role: "Research and Development Intern", location: "Bangalore, India", period: "Jan 2021 → Jul 2021", type: "Internship" },
+            { company: "QtPi", role: "Full Stack Development Intern", location: "Bangalore, India", period: "May 2019 → Jul 2019", type: "Internship" },
+          ].map((exp, i) => (
+            <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", padding: "1.5rem 2rem", background: "#fff", border: "1px solid #efefef", borderRadius: "8px", transition: "border-color 0.2s" }}
+              onMouseEnter={(e) => e.currentTarget.style.borderColor = "#0a7c52"}
+              onMouseLeave={(e) => e.currentTarget.style.borderColor = "#efefef"}
+            >
+              <div>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 600, marginBottom: "0.3rem" }}>{exp.role}</h3>
+                <p style={{ fontSize: "0.9rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.2rem" }}>{exp.company}</p>
+                <p style={{ fontSize: "0.8rem", color: "#888" }}>{exp.location}</p>
+              </div>
+              <div style={{ textAlign: "right", flexShrink: 0, marginLeft: "2rem" }}>
+                <p style={{ fontSize: "0.78rem", color: "#3a5a4a", marginBottom: "0.5rem" }}>{exp.period}</p>
+                <span style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "3px 10px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33" }}>{exp.type}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Education */}
+      <section style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
+        <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Academic</p>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, marginBottom: "3rem" }}>Education</h2>
+        <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+          {[
+            {
+              school: "University of San Diego, California",
+              degree: "Master of Science in Business Analytics",
+              period: "Jul 2024 – Dec 2025",
+              coursework: "Customer Analytics, Web Mining and Recommender Systems, Analysing Large Data, SQL and ETL, Statistics for Business Analytics, Business Intelligence Systems, Scalable Analytics, Experiments for Business Analytics",
+            },
+            {
+              school: "PES University, Bangalore, India",
+              degree: "B-Tech in Computer Science and Engineering — Data Science Specialisation",
+              period: "Aug 2017 – May 2021",
+              coursework: "Data Analytics, Database Management, Data Science, Machine Learning, Data Structures and Algorithms, Quant Methods, Big Data, Cloud Computing, Design and Analysis of Algorithms, OOP, Linear Algebra, Web Technologies, Operating Systems, Software Testing",
+            },
+          ].map((edu, i) => (
+            <div key={i} style={{ padding: "2rem", background: "#fff", border: "1px solid #efefef", borderRadius: "8px", transition: "border-color 0.2s" }}
+              onMouseEnter={(e) => e.currentTarget.style.borderColor = "#0a7c52"}
+              onMouseLeave={(e) => e.currentTarget.style.borderColor = "#efefef"}
+            >
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1rem" }}>
+                <div>
+                  <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 600, marginBottom: "0.3rem" }}>{edu.school}</h3>
+                  <p style={{ fontSize: "0.9rem", color: "#0a7c52", fontWeight: 600 }}>{edu.degree}</p>
+                </div>
+                <span style={{ fontSize: "0.78rem", color: "#3a5a4a", flexShrink: 0, marginLeft: "2rem" }}>{edu.period}</span>
+              </div>
+              <p style={{ fontSize: "0.82rem", color: "#888", lineHeight: "1.7" }}>
+                <span style={{ fontWeight: 700, color: "#3a5a4a" }}>Coursework: </span>{edu.coursework}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section id="contact" style={{ margin: "0 3.5rem 4rem", background: "#0a7c52", borderRadius: "8px", padding: "3rem 3.5rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div>
           <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.2rem", fontWeight: 600, color: "#fff", marginBottom: "0.5rem" }}>Let's build something</h3>
@@ -188,8 +257,8 @@ export default function Home() {
         </div>
         <div style={{ display: "flex", gap: "0.8rem" }}>
           <a href="https://github.com/Krithikap019" target="_blank" style={{ background: "rgba(255,255,255,0.15)", color: "#fff", padding: "0.75rem 1.5rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>GitHub</a>
-          <a href="https://linkedin.com/in/krithika-suwarna" target="_blank" style={{ background: "rgba(255,255,255,0.15)", color: "#fff", padding: "0.75rem 1.5rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>LinkedIn</a>
-          <a href="mailto:you@email.com" style={{ background: "#fff", color: "#0a7c52", padding: "0.75rem 1.5rem", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>Get in touch</a>
+          <a href="https://www.linkedin.com/in/krithika-suwarna-b8240b17b/" target="_blank" style={{ background: "rgba(255,255,255,0.15)", color: "#fff", padding: "0.75rem 1.5rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>LinkedIn</a>
+          <a href="mailto:krithikap019@gmail.com" style={{ background: "#fff", color: "#0a7c52", padding: "0.75rem 1.5rem", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>Get in touch</a>
         </div>
       </section>
 
