@@ -18,7 +18,7 @@ const projects = [
     description: "Paste any text and get a clean, structured summary in seconds.",
     tags: ["Claude API", "Python"],
     href: "/projects/summarizer",
-  }
+  },
   {
     id: "image",
     icon: "🎨",
@@ -130,7 +130,7 @@ export default function Home() {
             From machine learning pipelines to full-stack AI applications — I turn complex data into products people actually use.
           </p>
           <div style={{ display: "flex", gap: "1rem", alignItems: "center", marginBottom: "2.5rem" }}>
-            <a href="#projects" style={{ background: "#0a7c52", color: "#fff", padding: "0.9rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>View my work lol</a>
+            <a href="#projects" style={{ background: "#0a7c52", color: "#fff", padding: "0.9rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>View my work</a>
             <a href="#about" style={{ color: "#0a7c52", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>About me →</a>
           </div>
         </div>
