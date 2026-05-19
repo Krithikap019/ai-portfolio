@@ -9,7 +9,7 @@ const projects = [
   description: "AI-powered system that analyzes conversations using NLP and transformer models to extract insights, detect intent and sentiment.",
   tags: ["Python", "Streamlit", "NLP"],
   color: "#0a7c52",
-  href: "/projects/conversation",
+  href: "/projects/ai_conversation",
 },
   {
     id: "image",
