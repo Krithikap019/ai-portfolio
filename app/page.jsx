@@ -91,7 +91,7 @@ function ExperienceTimeline() {
             {exp.side === "left" && (
               <div
                 onClick={() => setSelected(selected === exp.id ? null : exp.id)}
-                style={{ cursor: "pointer", background: selected === exp.id ? "#fff" : "transparent", borderRadius: "8px", padding: selected === exp.id ? "1.2rem" : "0", border: selected === exp.id ? "1px solid #0a7c52" : "none", transition: "all 0.3s ease" }}
+                style={{ cursor: "pointer", background: selected === exp.id ? "#fff" : "rgba(255,255,255,0.6)", borderRadius: "8px", padding: "1rem", border: selected === exp.id ? "1px solid #0a7c52" : "1px solid rgba(10,124,82,0.12)", transition: "all 0.3s ease", boxShadow: selected === exp.id ? "0 4px 20px rgba(10,124,82,0.1)" : "0 1px 4px rgba(0,0,0,0.04)" }}
               >
                 <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.2rem" }}>{exp.role}</h3>
                 <p style={{ fontSize: "1rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.2rem" }}>{exp.company}</p>
@@ -133,7 +133,7 @@ function ExperienceTimeline() {
             {exp.side === "right" && (
               <div
                 onClick={() => setSelected(selected === exp.id ? null : exp.id)}
-                style={{ cursor: "pointer", background: selected === exp.id ? "#fff" : "transparent", borderRadius: "8px", padding: selected === exp.id ? "1.2rem" : "0", border: selected === exp.id ? "1px solid #0a7c52" : "none", transition: "all 0.3s ease" }}
+                style={{ cursor: "pointer", background: selected === exp.id ? "#fff" : "rgba(255,255,255,0.6)", borderRadius: "8px", padding: "1rem", border: selected === exp.id ? "1px solid #0a7c52" : "1px solid rgba(10,124,82,0.12)", transition: "all 0.3s ease", boxShadow: selected === exp.id ? "0 4px 20px rgba(10,124,82,0.1)" : "0 1px 4px rgba(0,0,0,0.04)" }}
               >
                 <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.2rem" }}>{exp.role}</h3>
                 <p style={{ fontSize: "1rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.2rem" }}>{exp.company}</p>
