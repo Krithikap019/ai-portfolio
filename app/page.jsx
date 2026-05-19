@@ -16,9 +16,9 @@ const projects = [
     id: "AI summarizer",
     icon: "📄",
     title: "AI Financial Report Analyzer",
-    description: "Paste any text and get a clean, structured summary in seconds.",
-    tags: ["Claude API", "Python"],
-    href: "/projects/summarizer",
+    description: "RAG-powered system that turns 10-K filings and earnings transcripts into a conversational assistant. Ask questions, get citation-backed answers with page references.",
+    tags: ["Python", "RAG", "FAISS"],
+    href: "projects/ai_conversation",
   },
   {
     id: "image",
