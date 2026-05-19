@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const projects = [
   {
-  id: "conversation",
+  id: "conversation_ai",
   icon: "🤖",
   title: "AI Conversation Intelligence",
   description: "AI-powered system that analyzes conversations using NLP and transformer models to extract insights, detect intent and sentiment.",
