@@ -283,14 +283,17 @@ export default function Home() {
           <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "1rem" }}>About me</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, lineHeight: "1.1", marginBottom: "1.5rem" }}>Hi, I'm Krithika</h2>
           <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", marginBottom: "1rem" }}>
-            I'm an AI engineer and data scientist who loves building tools that make people's lives easier. I work with Python, the Claude API, and Next.js to ship real products fast.
+            I'm a data scientist and AI engineer who loves building things that actually work. Not just models — systems that make decisions smarter, processes faster, and outcomes measurable.
+          </p>
+          <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", marginBottom: "1rem" }}>
+            I move fast, think in data, and care deeply about the "so what" — because a great model no one understands is just math.
           </p>
           <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85" }}>
-            Currently open to freelance projects and full-time roles.
+          Currently open to full-time roles in data science, AI, and analytics.
           </p>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
-          {[["6+", "AI Projects"], ["3", "APIs Used"], ["100%", "Vercel Hosted"], ["0", "Downtime"]].map(([num, label]) => (
+          {[["4+", "Years of Experience"], ["12+", "Projects Shipped"], ["2M+", "Records Analysed"], ["$780K+", "Total Impact"]].map(([num, label]) => (
             <div key={label} style={{ background: "#edf5f1", borderRadius: "8px", padding: "1.5rem", textAlign: "center", border: "1px solid rgba(10,124,82,0.15)" }}>
               <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.5rem", fontWeight: 600, color: "#0a7c52", display: "block" }}>{num}</span>
               <span style={{ fontSize: "0.68rem", fontWeight: 700, color: "#3a5a4a", textTransform: "uppercase", letterSpacing: "0.1em" }}>{label}</span>
@@ -300,9 +303,9 @@ export default function Home() {
       </section>
 
       {/* Experience */}
-      <section style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
+      <section id="experience" style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Work</p>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, marginBottom: "3rem", textAlign: "center" }}>Experience</h2>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, marginBottom: "3rem"}}>Experience</h2>
         <ExperienceTimeline />
       </section>
 
