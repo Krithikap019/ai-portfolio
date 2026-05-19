@@ -226,7 +226,7 @@ export default function Home() {
           <Link href="#experience" style={{ color: "#0d1f18", textDecoration: "none" }}>Experience</Link>
           <Link href="#contact" style={{ color: "#0d1f18", textDecoration: "none" }}>Contact</Link>
         </div>
-        <a href="mailto:you@email.com" style={{ background: "#0a7c52", color: "#fff", padding: "0.6rem 1.5rem", fontSize: "0.78rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>
+        <a href="mailto:krithikap019@gmail.com" style={{ background: "#0a7c52", color: "#fff", padding: "0.6rem 1.5rem", fontSize: "0.78rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>
           Hire me
         </a>
       </nav>

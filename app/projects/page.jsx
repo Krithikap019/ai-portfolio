@@ -3,8 +3,8 @@ import { useState } from "react";
 import Link from "next/link";
 
 const projects = [
-  { id: 0, title: "AI Conversation Intelligence", cat: "NLP & AI", tags: ["Python", "Streamlit", "RAG", "NLP"], icon: "🧠", link: "/projects/ai_conversation" },
-  { id: 1, title: "AI Financial Report Analyzer", cat: "NLP & AI", tags: ["Python", "RAG", "FAISS", "Groq"], icon: "💹", link: "/projects/ai_fin_analyser" },
+  { id: 0, title: "AI Conversation Intelligence", cat: "NLP & AI", tags: ["Python", "Streamlit", "RAG", "NLP"], icon: "🤖", link: "/projects/ai_conversation" },
+  { id: 1, title: "AI Financial Report Analyzer", cat: "NLP & AI", tags: ["Python", "RAG", "FAISS", "Groq"], icon: "📄", link: "/projects/ai_fin_analyser" },
   { id: 2, title: "Intuit – Predictive Analytics for QuickBooks", cat: "Machine Learning", tags: ["XGBoost", "Python", "Regression"], icon: "📊", link: "#" },
   { id: 3, title: "S-Mobile Customer Churn Prediction", cat: "Machine Learning", tags: ["Neural Networks", "Random Forest", "Python"], icon: "📱", link: "#" },
   { id: 4, title: "Amazon Health & Personal Care Recommender", cat: "NLP & AI", tags: ["SVD", "NLP", "Python", "Regression"], icon: "🛒", link: "#" },
@@ -41,6 +41,12 @@ export default function AllProjects() {
       <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.4rem 3.5rem", borderBottom: "1px solid rgba(10,124,82,0.2)", background: "#f4f8f6" }}>
         <div style={{ fontFamily: "'Raleway', sans-serif", fontSize: "1.2rem", fontWeight: 300, letterSpacing: "0.09em" }}>
           Krithika<span style={{ color: "#0a7c52" }}> </span>Suwarna
+        </div>
+        <div style={{ display: "flex", gap: "2.5rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+        <Link href="/projects" style={{ color: "#0d1f18", textDecoration: "none" }}>Projects</Link>
+        <Link href="/#about" style={{ color: "#0d1f18", textDecoration: "none" }}>About</Link>
+        <Link href="/#experience" style={{ color: "#0d1f18", textDecoration: "none" }}>Experience</Link>
+        <Link href="/#contact" style={{ color: "#0d1f18", textDecoration: "none" }}>Contact</Link>
         </div>
         <Link href="/" style={{ color: "#0a7c52", textDecoration: "none", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>← Back home</Link>
       </nav>
