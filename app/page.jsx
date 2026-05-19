@@ -30,7 +30,7 @@ const projects = [
   },
 ];
 
-const skills = const skills = ["Python", "SQL", "Machine Learning", "NLP & RAG", "XGBoost", "Deep Learning", "Tableau", "Snowflake", "PyTorch", "A/B Testing", "FAISS", "Docker", "AWS", "React", "Streamlit", "Next.js"];;
+const skills = ["Python", "SQL", "Machine Learning", "NLP & RAG", "XGBoost", "Deep Learning", "Tableau", "Snowflake", "PyTorch", "A/B Testing", "FAISS", "Docker", "AWS", "React", "Streamlit", "Next.js"];;
 
 function ExperienceTimeline() {
   const [selected, setSelected] = useState(null);
