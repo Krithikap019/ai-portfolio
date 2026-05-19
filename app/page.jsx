@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { useState } from "react";
 
 const projects = [
   {
@@ -30,6 +31,136 @@ const projects = [
 ];
 
 const skills = ["Python", "Machine Learning", "Next.js", "Data Science", "Claude API", "React", "SQL", "TensorFlow"];
+
+function ExperienceTimeline() {
+  const [selected, setSelected] = useState(null);
+
+  const experiences = [
+    {
+      id: 1, role: "Data Scientist", company: "Experian", location: "San Diego, CA",
+      period: "Mar–Jun 2025", type: "Intern", side: "left",
+      desc: "Developed predictive models to identify high-value customer segments and optimize marketing campaign targeting. Built end-to-end ML pipelines using XGBoost and Python to drive QuickBooks upgrade decisions.",
+      tags: ["XGBoost", "Python", "ML", "Regression"],
+    },
+    {
+      id: 2, role: "Business Analyst", company: "Big Table", location: "San Diego, CA",
+      period: "Feb–May 2025", type: "Intern", side: "right",
+      desc: "Analyzed large-scale business datasets to surface actionable insights for product and revenue strategy. Created dashboards and reports to support data-driven decision-making across teams.",
+      tags: ["SQL", "Tableau", "Data Analysis", "Dashboards"],
+    },
+    {
+      id: 3, role: "R&D Engineer 2", company: "BroadCom", location: "Bangalore, India",
+      period: "Nov 2023–Jun 2024", type: "Full-time", side: "left",
+      desc: "Designed and optimized research pipelines for high-performance networking systems. Contributed to distributed infrastructure components and improved system reliability across production environments.",
+      tags: ["Python", "Systems", "Networking", "Infrastructure"],
+    },
+    {
+      id: 4, role: "Member of Technical Staff 2", company: "VMware", location: "Bangalore, India",
+      period: "Jul 2021–Nov 2023", type: "Full-time", side: "right",
+      desc: "Led feature development for cloud infrastructure and virtualization tools. Collaborated cross-functionally to ship platform improvements and contributed to internal developer tooling used by thousands of engineers.",
+      tags: ["Cloud", "Java", "Virtualization", "Platform"],
+    },
+    {
+      id: 5, role: "R&D Intern", company: "VMware", location: "Bangalore, India",
+      period: "Jan–Jul 2021", type: "Intern", side: "left",
+      desc: "Contributed to research and development of cloud-native features and internal automation tooling. Gained hands-on experience with distributed systems and agile engineering practices.",
+      tags: ["Cloud", "Automation", "Python", "Agile"],
+    },
+    {
+      id: 6, role: "Full Stack Development Intern", company: "QtPi", location: "Bangalore, India",
+      period: "May–Jul 2019", type: "Intern", side: "right",
+      desc: "Built and deployed full-stack web features for an ed-tech platform. Worked across frontend and backend systems to deliver interactive learning experiences for students.",
+      tags: ["React", "Node.js", "Full Stack", "Ed-Tech"],
+    },
+  ];
+
+  return (
+    <div style={{ position: "relative", maxWidth: "900px", margin: "0 auto" }}>
+      <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.25)", transform: "translateX(-50%)" }} />
+      {experiences.map((exp) => (
+        <div key={exp.id} style={{ display: "grid", gridTemplateColumns: "1fr 40px 1fr", gap: "0 1rem", marginBottom: "2rem", alignItems: "start" }}>
+
+          {/* Left side */}
+          <div
+            style={{
+              textAlign: "right", paddingRight: "1.5rem", paddingTop: "0.2rem",
+              transition: "transform 0.3s ease",
+              transform: selected === exp.id && exp.side === "left" ? "translateX(-12px)" : "translateX(0)",
+            }}
+          >
+            {exp.side === "left" && (
+              <div
+                onClick={() => setSelected(selected === exp.id ? null : exp.id)}
+                style={{ cursor: "pointer", background: selected === exp.id ? "#fff" : "transparent", borderRadius: "8px", padding: selected === exp.id ? "1.2rem" : "0", border: selected === exp.id ? "1px solid #0a7c52" : "none", transition: "all 0.3s ease" }}
+              >
+                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.2rem" }}>{exp.role}</h3>
+                <p style={{ fontSize: "1rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.2rem" }}>{exp.company}</p>
+                <p style={{ fontSize: "0.78rem", color: "#888", marginBottom: "0.3rem" }}>{exp.location}</p>
+                <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", gap: "0.5rem" }}>
+                  <span style={{ fontSize: "0.72rem", color: "#3a5a4a" }}>{exp.period}</span>
+                  <span style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33", border: "1px solid rgba(10,124,82,0.2)" }}>{exp.type}</span>
+                </div>
+                {selected === exp.id && (
+                  <div style={{ marginTop: "0.8rem", paddingTop: "0.8rem", borderTop: "1px solid rgba(10,124,82,0.15)", textAlign: "right" }}>
+                    <p style={{ fontSize: "0.82rem", color: "#3a5a4a", lineHeight: "1.7", marginBottom: "0.8rem" }}>{exp.desc}</p>
+                    <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap", justifyContent: "flex-end" }}>
+                      {exp.tags.map((tag) => (
+                        <span key={tag} style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: "#d4ede5", color: "#064d33" }}>{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+
+          {/* Center dot */}
+          <div style={{ display: "flex", justifyContent: "center", paddingTop: "0.5rem" }}>
+            <div
+              onClick={() => setSelected(selected === exp.id ? null : exp.id)}
+              style={{ width: "14px", height: "14px", borderRadius: "50%", background: selected === exp.id ? "#0a7c52" : "#fff", border: "2.5px solid #0a7c52", zIndex: 1, flexShrink: 0, cursor: "pointer", transition: "all 0.2s", transform: selected === exp.id ? "scale(1.3)" : "scale(1)" }}
+            />
+          </div>
+
+          {/* Right side */}
+          <div
+            style={{
+              paddingLeft: "1.5rem", paddingTop: "0.2rem",
+              transition: "transform 0.3s ease",
+              transform: selected === exp.id && exp.side === "right" ? "translateX(12px)" : "translateX(0)",
+            }}
+          >
+            {exp.side === "right" && (
+              <div
+                onClick={() => setSelected(selected === exp.id ? null : exp.id)}
+                style={{ cursor: "pointer", background: selected === exp.id ? "#fff" : "transparent", borderRadius: "8px", padding: selected === exp.id ? "1.2rem" : "0", border: selected === exp.id ? "1px solid #0a7c52" : "none", transition: "all 0.3s ease" }}
+              >
+                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.2rem" }}>{exp.role}</h3>
+                <p style={{ fontSize: "1rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.2rem" }}>{exp.company}</p>
+                <p style={{ fontSize: "0.78rem", color: "#888", marginBottom: "0.3rem" }}>{exp.location}</p>
+                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <span style={{ fontSize: "0.72rem", color: "#3a5a4a" }}>{exp.period}</span>
+                  <span style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33", border: "1px solid rgba(10,124,82,0.2)" }}>{exp.type}</span>
+                </div>
+                {selected === exp.id && (
+                  <div style={{ marginTop: "0.8rem", paddingTop: "0.8rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
+                    <p style={{ fontSize: "0.82rem", color: "#3a5a4a", lineHeight: "1.7", marginBottom: "0.8rem" }}>{exp.desc}</p>
+                    <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
+                      {exp.tags.map((tag) => (
+                        <span key={tag} style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: "#d4ede5", color: "#064d33" }}>{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+
+        </div>
+      ))}
+    </div>
+  );
+}
 
 function ProjectCard({ icon, title, description, tags, color, href }) {
   const isExternal = href.startsWith("http");
@@ -186,53 +317,7 @@ export default function Home() {
       <section style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Work</p>
         <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, marginBottom: "3rem", textAlign: "center" }}>Experience</h2>
-        <div style={{ position: "relative", maxWidth: "800px", margin: "0 auto" }}>
-          <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.25)", transform: "translateX(-50%)" }} />
-          {[
-            { company: "UCSD Empathy & Emotion Lab", role: "Research Scientist", location: "San Diego, CA", period: "Dec 2021–Present", type: "Full-time", side: "right" },
-            { company: "Experian", role: "Data Scientist", location: "San Diego, CA", period: "Mar–Jun 2025", type: "Intern", side: "left" },
-            { company: "Big Table", role: "Business Analyst", location: "San Diego, CA", period: "Feb–May 2025", type: "Intern", side: "right" },
-            { company: "BroadCom", role: "Research and Development Engineer 2", location: "Bangalore, India", period: "Jul 2021–Jun 2024", type: "Full-time", side: "left" },
-            { company: "VMware", role: "Member of Technical Staff 2", location: "Bangalore, India", period: "Jul 2021–Nov 2023", type: "Full-time", side: "right" },
-            { company: "VMware", role: "R&D Intern", location: "Bangalore, India", period: "Jan–Jul 2021", type: "Intern", side: "left" },
-            { company: "QtPi", role: "Full Stack Development Intern", location: "Bangalore, India", period: "May–Jul 2019", type: "Intern", side: "right" },
-          ].map((exp, i) => (
-            <div key={i} style={{ display: "grid", gridTemplateColumns: "1fr 40px 1fr", gap: "0 1rem", marginBottom: "2rem", alignItems: "start" }}>
-              {/* Left content or empty */}
-              <div style={{ textAlign: "right", paddingRight: "1rem", paddingTop: "0.2rem" }}>
-                {exp.side === "left" && (
-                  <>
-                    <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.2rem" }}>{exp.role}</h3>
-                    <p style={{ fontSize: "0.9rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.2rem" }}>{exp.company}</p>
-                    <p style={{ fontSize: "0.78rem", color: "#888", marginBottom: "0.3rem" }}>{exp.location}</p>
-                    <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", gap: "0.5rem" }}>
-                      <span style={{ fontSize: "0.72rem", color: "#3a5a4a" }}>{exp.period}</span>
-                      <span style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33", border: "1px solid rgba(10,124,82,0.2)" }}>{exp.type}</span>
-                    </div>
-                  </>
-                )}
-              </div>
-              {/* Center dot */}
-              <div style={{ display: "flex", justifyContent: "center", paddingTop: "0.4rem" }}>
-                <div style={{ width: "14px", height: "14px", borderRadius: "50%", background: "#0a7c52", border: "3px solid #f4f8f6", zIndex: 1, flexShrink: 0 }} />
-              </div>
-              {/* Right content or empty */}
-              <div style={{ paddingLeft: "1rem", paddingTop: "0.2rem" }}>
-                {exp.side === "right" && (
-                  <>
-                    <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.2rem" }}>{exp.role}</h3>
-                    <p style={{ fontSize: "0.9rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.2rem" }}>{exp.company}</p>
-                    <p style={{ fontSize: "0.78rem", color: "#888", marginBottom: "0.3rem" }}>{exp.location}</p>
-                    <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                      <span style={{ fontSize: "0.72rem", color: "#3a5a4a" }}>{exp.period}</span>
-                      <span style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33", border: "1px solid rgba(10,124,82,0.2)" }}>{exp.type}</span>
-                    </div>
-                  </>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
+        <ExperienceTimeline />
       </section>
 
       {/* Education */}
