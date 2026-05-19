@@ -6,38 +6,35 @@ export default function ProjectCard({ icon, title, description, tags, color, hre
     <Link href={href} style={{ textDecoration: "none" }}>
       <div
         style={{
-          background: "#161622",
-          border: "1px solid #1e1e2e",
-          borderRadius: "10px",
-          padding: "1.4rem",
+          background: "#fff",
+          border: "1px solid rgba(10,124,82,0.15)",
+          borderRadius: "8px",
+          padding: "1.6rem",
           cursor: "pointer",
           transition: "border-color 0.2s, transform 0.2s",
-          position: "relative",
-          overflow: "hidden",
           height: "100%",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.borderColor = color;
+          e.currentTarget.style.borderColor = "#0a7c52";
           e.currentTarget.style.transform = "translateY(-3px)";
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.borderColor = "#1e1e2e";
+          e.currentTarget.style.borderColor = "rgba(10,124,82,0.15)";
           e.currentTarget.style.transform = "translateY(0)";
         }}
       >
-        <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "2px", background: color }} />
-        <div style={{ fontSize: "1.6rem", marginBottom: "1rem" }}>{icon}</div>
-        <h3 style={{ fontSize: "1rem", fontWeight: 600, color: "#e8e8f0", marginBottom: "0.5rem" }}>{title}</h3>
-        <p style={{ fontSize: "0.82rem", color: "#6b6b80", lineHeight: "1.7", marginBottom: "1.2rem" }}>{description}</p>
-        <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center" }}>
-          <div style={{ display: "flex", gap: "0.4rem" }}>
+        <div style={{ fontSize: "1.8rem", marginBottom: "1rem" }}>{icon}</div>
+        <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.5rem" }}>{title}</h3>
+        <p style={{ fontSize: "0.85rem", color: "#3a5a4a", lineHeight: "1.7", marginBottom: "1.2rem" }}>{description}</p>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div style={{ display: "flex", gap: "0.5rem" }}>
             {tags.map((tag) => (
-              <span key={tag} style={{ fontSize: "0.65rem", background: "#1e1e2e", color: "#6b6b80", padding: "3px 10px", borderRadius: "12px", letterSpacing: "0.05em" }}>
+              <span key={tag} style={{ fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", background: "#d4ede5", color: "#064d33", padding: "3px 10px", borderRadius: "20px" }}>
                 {tag}
               </span>
             ))}
           </div>
-          <span style={{ fontSize: "0.75rem", color: color }}>view →</span>
+          <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#0a7c52", letterSpacing: "0.04em" }}>View →</span>
         </div>
       </div>
     </Link>
