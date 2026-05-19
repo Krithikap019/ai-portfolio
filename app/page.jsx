@@ -9,7 +9,7 @@ const projects = [
   description: "AI-powered system that analyzes conversations using NLP and transformer models to extract insights, detect intent and sentiment.",
   tags: ["Python", "Streamlit", "NLP"],
   color: "#0a7c52",
-  href: "/projects/chat/ai_conversation",
+  href: "/projects/ai_conversation",
 },
   {
     id: "image",
@@ -159,7 +159,7 @@ export default function Home() {
             <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Selected work</p>
             <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600 }}>Featured Projects</h2>
           </div>
-          <a href="#" style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "#0a7c52", textDecoration: "none", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>View all →</a>
+          <a href="/projects" style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "#0a7c52", textDecoration: "none", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>View all →</a>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.5rem" }}>
           {projects.map((p) => <ProjectCard key={p.id} {...p} />)}
