@@ -217,12 +217,13 @@ export default function Home() {
     <main style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", background: "#f4f8f6", minHeight: "100vh", color: "#0d1f18" }}>
 
       <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.4rem 3.5rem", borderBottom: "1px solid rgba(10,124,82,0.2)", background: "#f4f8f6" }}>
-        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.5rem", fontWeight: 600 }}>
-          Krithika<span style={{ color: "#0a7c52" }}>.</span>S
+        <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "1.8rem", letterSpacing: "0.05em" }}>
+        Krithika<span style={{ color: "#0a7c52" }}>.</span>S
         </div>
         <div style={{ display: "flex", gap: "2.5rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase" }}>
-          <Link href="#projects" style={{ color: "#0d1f18", textDecoration: "none" }}>Work</Link>
+          <Link href="#projects" style={{ color: "#0d1f18", textDecoration: "none" }}>Projects</Link>
           <Link href="#about" style={{ color: "#0d1f18", textDecoration: "none" }}>About</Link>
+          <Link href="#experience" style={{ color: "#0d1f18", textDecoration: "none" }}>Experience</Link>
           <Link href="#contact" style={{ color: "#0d1f18", textDecoration: "none" }}>Contact</Link>
         </div>
         <a href="mailto:you@email.com" style={{ background: "#0a7c52", color: "#fff", padding: "0.6rem 1.5rem", fontSize: "0.78rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>
@@ -234,7 +235,7 @@ export default function Home() {
         <div>
           <div style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.5rem", display: "flex", alignItems: "center", gap: "0.6rem" }}>
             <span style={{ width: "24px", height: "1.5px", background: "#0a7c52", display: "inline-block" }} />
-            AI Engineer & Data Scientist
+            Data Scientist · AI Engineer · Developer
           </div>
           <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(4rem, 8vw, 7rem)", lineHeight: "1", fontWeight: 600, letterSpacing: "-0.02em", marginBottom: "0.3rem" }}>
             Krithika Suwarna

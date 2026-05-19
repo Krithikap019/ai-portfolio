@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={jakarta.variable}>
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Bebas+Neue&display=swap" rel="stylesheet" />
       </head>
       <body>{children}</body>
     </html>
