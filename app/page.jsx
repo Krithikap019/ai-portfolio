@@ -3,6 +3,15 @@ import Link from "next/link";
 
 const projects = [
   {
+  id: "conversation",
+  icon: "🧠",
+  title: "Conversation Intelligence",
+  description: "AI-powered system that analyzes conversations using NLP and transformer models to extract insights, detect intent and sentiment.",
+  tags: ["Python", "Streamlit", "NLP"],
+  color: "#0a7c52",
+  href: "https://ai-conversation-intelligence.streamlit.app/",
+},
+  {
     id: "chat",
     icon: "🤖",
     title: "AI Chat Assistant",
@@ -30,9 +39,14 @@ const projects = [
 
 const skills = ["Python", "Machine Learning", "Next.js", "Data Science", "Claude API", "React", "SQL", "TensorFlow"];
 
-function ProjectCard({ icon, title, description, tags, href }) {
+function ProjectCard({ icon, title, description, tags, color, href }) {
+  const isExternal = href.startsWith("http");
+  const Wrapper = ({ children }) => isExternal
+    ? <a href={href} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>{children}</a>
+    : <Link href={href} style={{ textDecoration: "none" }}>{children}</Link>;
+
   return (
-    <Link href={href} style={{ textDecoration: "none" }}>
+    <Wrapper>
       <div
         style={{ background: "#fff", border: "1px solid #efefef", borderRadius: "8px", padding: "1.8rem", height: "100%", transition: "border-color 0.2s, transform 0.2s", cursor: "pointer" }}
         onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#0a7c52"; e.currentTarget.style.transform = "translateY(-2px)"; }}
@@ -42,17 +56,17 @@ function ProjectCard({ icon, title, description, tags, href }) {
         <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.5rem" }}>{title}</h3>
         <p style={{ fontSize: "0.85rem", color: "#666", lineHeight: "1.75", marginBottom: "1.2rem" }}>{description}</p>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <div style={{ display: "flex", gap: "0.4rem" }}>
+          <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
             {tags.map((tag) => (
               <span key={tag} style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", background: "#f0f8f5", color: "#064d33", padding: "3px 10px", borderRadius: "20px" }}>
                 {tag}
               </span>
             ))}
           </div>
-          <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#0a7c52" }}>View →</span>
+          <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#0a7c52" }}>{isExternal ? "View app →" : "View →"}</span>
         </div>
       </div>
-    </Link>
+    </Wrapper>
   );
 }
 
