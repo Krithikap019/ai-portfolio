@@ -74,84 +74,69 @@ function ExperienceTimeline() {
     },
   ];
 
+  const cardStyle = (exp) => ({
+    cursor: "pointer",
+    background: selected === exp.id ? "#fff" : "rgba(255,255,255,0.6)",
+    borderRadius: "8px",
+    padding: "1rem",
+    border: selected === exp.id ? "1px solid #0a7c52" : "1px solid rgba(10,124,82,0.12)",
+    transition: "all 0.3s ease",
+    boxShadow: selected === exp.id ? "0 4px 20px rgba(10,124,82,0.1)" : "0 1px 4px rgba(0,0,0,0.04)",
+    textAlign: "left",
+  });
+
+  const renderContent = (exp) => (
+    <>
+      <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.2rem" }}>{exp.role}</h3>
+      <p style={{ fontSize: "1rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.3rem" }}>{exp.company}</p>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: selected === exp.id ? "0" : "0" }}>
+        <p style={{ fontSize: "0.78rem", color: "#888" }}>{exp.location}</p>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+          <span style={{ fontSize: "0.72rem", color: "#3a5a4a" }}>{exp.period}</span>
+          <span style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33", border: "1px solid rgba(10,124,82,0.2)" }}>{exp.type}</span>
+        </div>
+      </div>
+      {selected === exp.id && (
+        <div style={{ marginTop: "0.8rem", paddingTop: "0.8rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
+          <p style={{ fontSize: "0.82rem", color: "#3a5a4a", lineHeight: "1.7", marginBottom: "0.8rem" }}>{exp.desc}</p>
+          <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
+            {exp.tags.map((tag) => (
+              <span key={tag} style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: "#d4ede5", color: "#064d33" }}>{tag}</span>
+            ))}
+          </div>
+        </div>
+      )}
+    </>
+  );
+
   return (
     <div style={{ position: "relative", maxWidth: "900px", margin: "0 auto" }}>
       <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.25)", transform: "translateX(-50%)" }} />
       {experiences.map((exp) => (
         <div key={exp.id} style={{ display: "grid", gridTemplateColumns: "1fr 40px 1fr", gap: "0 1rem", marginBottom: "0.8rem", alignItems: "start" }}>
 
-          {/* Left side */}
-          <div
-            style={{
-              textAlign: "right", paddingRight: "1.5rem", paddingTop: "0.2rem",
-              transition: "transform 0.3s ease",
-              transform: selected === exp.id && exp.side === "left" ? "translateX(-12px)" : "translateX(0)",
-            }}
-          >
+          {/* Left */}
+          <div style={{ paddingRight: "1.5rem", paddingTop: "0.2rem", transition: "transform 0.3s ease", transform: selected === exp.id && exp.side === "left" ? "translateX(-12px)" : "translateX(0)" }}>
             {exp.side === "left" && (
-              <div
-                onClick={() => setSelected(selected === exp.id ? null : exp.id)}
-                style={{ cursor: "pointer", background: selected === exp.id ? "#fff" : "rgba(255,255,255,0.6)", borderRadius: "8px", padding: "1rem", border: selected === exp.id ? "1px solid #0a7c52" : "1px solid rgba(10,124,82,0.12)", transition: "all 0.3s ease", boxShadow: selected === exp.id ? "0 4px 20px rgba(10,124,82,0.1)" : "0 1px 4px rgba(0,0,0,0.04)" }}
-              >
-                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.2rem" }}>{exp.role}</h3>
-                <p style={{ fontSize: "1rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.2rem" }}>{exp.company}</p>
-                <p style={{ fontSize: "0.78rem", color: "#888", marginBottom: "0.3rem" }}>{exp.location}</p>
-                <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", gap: "0.5rem" }}>
-                  <span style={{ fontSize: "0.72rem", color: "#3a5a4a" }}>{exp.period}</span>
-                  <span style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33", border: "1px solid rgba(10,124,82,0.2)" }}>{exp.type}</span>
-                </div>
-                {selected === exp.id && (
-                  <div style={{ marginTop: "0.8rem", paddingTop: "0.8rem", borderTop: "1px solid rgba(10,124,82,0.15)", textAlign: "right" }}>
-                    <p style={{ fontSize: "0.82rem", color: "#3a5a4a", lineHeight: "1.7", marginBottom: "0.8rem" }}>{exp.desc}</p>
-                    <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap", justifyContent: "flex-end" }}>
-                      {exp.tags.map((tag) => (
-                        <span key={tag} style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: "#d4ede5", color: "#064d33" }}>{tag}</span>
-                      ))}
-                    </div>
-                  </div>
-                )}
+              <div onClick={() => setSelected(selected === exp.id ? null : exp.id)} style={cardStyle(exp)}>
+                {renderContent(exp)}
               </div>
             )}
           </div>
 
-          {/* Center dot */}
-          <div style={{ display: "flex", justifyContent: "center", paddingTop: "0.5rem" }}>
+          {/* Dot */}
+          <div style={{ display: "flex", justifyContent: "center", paddingTop: "0.8rem" }}>
             <div
               onClick={() => setSelected(selected === exp.id ? null : exp.id)}
               style={{ width: "14px", height: "14px", borderRadius: "50%", background: selected === exp.id ? "#0a7c52" : "#fff", border: "2.5px solid #0a7c52", zIndex: 1, flexShrink: 0, cursor: "pointer", transition: "all 0.2s", transform: selected === exp.id ? "scale(1.3)" : "scale(1)" }}
             />
           </div>
 
-          {/* Right side */}
-          <div
-            style={{
-              paddingLeft: "1.5rem", paddingTop: "0.2rem",
-              transition: "transform 0.3s ease",
-              transform: selected === exp.id && exp.side === "right" ? "translateX(12px)" : "translateX(0)",
-            }}
-          >
+          {/* Right */}
+          <div style={{ paddingLeft: "1.5rem", paddingTop: "0.2rem", transition: "transform 0.3s ease", transform: selected === exp.id && exp.side === "right" ? "translateX(12px)" : "translateX(0)" }}>
             {exp.side === "right" && (
-              <div
-                onClick={() => setSelected(selected === exp.id ? null : exp.id)}
-                style={{ cursor: "pointer", background: selected === exp.id ? "#fff" : "rgba(255,255,255,0.6)", borderRadius: "8px", padding: "1rem", border: selected === exp.id ? "1px solid #0a7c52" : "1px solid rgba(10,124,82,0.12)", transition: "all 0.3s ease", boxShadow: selected === exp.id ? "0 4px 20px rgba(10,124,82,0.1)" : "0 1px 4px rgba(0,0,0,0.04)" }}
-              >
-                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.2rem" }}>{exp.role}</h3>
-                <p style={{ fontSize: "1rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.2rem" }}>{exp.company}</p>
-                <p style={{ fontSize: "0.78rem", color: "#888", marginBottom: "0.3rem" }}>{exp.location}</p>
-                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                  <span style={{ fontSize: "0.72rem", color: "#3a5a4a" }}>{exp.period}</span>
-                  <span style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33", border: "1px solid rgba(10,124,82,0.2)" }}>{exp.type}</span>
-                </div>
-                {selected === exp.id && (
-                  <div style={{ marginTop: "0.8rem", paddingTop: "0.8rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
-                    <p style={{ fontSize: "0.82rem", color: "#3a5a4a", lineHeight: "1.7", marginBottom: "0.8rem" }}>{exp.desc}</p>
-                    <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
-                      {exp.tags.map((tag) => (
-                        <span key={tag} style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: "#d4ede5", color: "#064d33" }}>{tag}</span>
-                      ))}
-                    </div>
-                  </div>
-                )}
+              <div onClick={() => setSelected(selected === exp.id ? null : exp.id)} style={cardStyle(exp)}>
+                {renderContent(exp)}
               </div>
             )}
           </div>
