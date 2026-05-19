@@ -237,13 +237,13 @@ export default function Home() {
             <span style={{ width: "24px", height: "1.5px", background: "#0a7c52", display: "inline-block" }} />
             Data Scientist · AI Engineer · Developer
           </div>
-          <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(4rem, 8vw, 9rem)", lineHeight: "1", fontWeight: 600, letterSpacing: "-0.02em", marginBottom: "0.3rem" }}>
+          <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(4rem, 8vw, 9rem)", lineHeight: "1", fontWeight: 600, letterSpacing: "-0.02em", marginBottom: "0.3rem", marginTop: "0.3rem"  }}>
             Krithika Suwarna
           </h1>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.5rem, 3vw, 2.5rem)", lineHeight: "1.1", fontWeight: 600, letterSpacing: "-0.01em", marginBottom: "1.5rem", color: "#0d1f18" }}>
             I build <em style={{ color: "#0a7c52", fontStyle: "italic" }}>intelligent</em> tools & models that matter.
           </h2>
-          <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", maxWidth: "720px", marginBottom: "2.5rem" }}>
+          <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", maxWidth: "720px", marginBottom: "2.5rem", marginTop: "0.5rem" }}>
             From machine learning pipelines to full-stack AI applications — I turn complex data into products people actually use. With experience across top tech companies like VMware and BroadCom, and a Master's in Business Analytics from UC San Diego, I bring both technical depth and business thinking to every problem I solve.
           </p>
           <div style={{ display: "flex", gap: "1rem", alignItems: "center", marginBottom: "2.5rem" }}>
