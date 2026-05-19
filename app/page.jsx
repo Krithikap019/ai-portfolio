@@ -71,7 +71,7 @@ function ExperienceTimeline() {
   const cardStyle = (exp) => ({
     cursor: "pointer",
     background: selected === exp.id ? "#fff" : "rgba(255,255,255,0.6)",
-    borderRadius: "8px",
+    borderRadius: "0",
     padding: "1rem",
     border: selected === exp.id ? "1px solid #0a7c52" : "1px solid rgba(10,124,82,0.12)",
     transition: "all 0.3s ease",
