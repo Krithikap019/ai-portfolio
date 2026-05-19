@@ -76,8 +76,8 @@ export default function AllProjects() {
         {/* Main content */}
         <div style={{ padding: "3rem 3.5rem" }}>
           <div style={{ marginBottom: "2.5rem" }}>
-            <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, marginBottom: "0.4rem" }}>
-              {active === "All" ? "All Projects" : active}
+            <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.2rem", fontWeight: 600, marginBottom: "0.4rem" }}>
+              {active === "All" ? "The Portfolio" : active}
             </h1>
             <p style={{ fontSize: "0.85rem", color: "#888" }}>
               Showing {filtered.length} project{filtered.length !== 1 ? "s" : ""}
