@@ -5,12 +5,20 @@ const projects = [
   {
   id: "conversation",
   icon: "🤖",
-  title: "Conversation Intelligence",
+  title: "AI Conversation Intelligence",
   description: "AI-powered system that analyzes conversations using NLP and transformer models to extract insights, detect intent and sentiment.",
   tags: ["Python", "Streamlit", "NLP"],
   color: "#0a7c52",
   href: "/projects/ai_conversation",
 },
+{
+    id: "summarizer",
+    icon: "📄",
+    title: "AI Financial Report Analyzer",
+    description: "Paste any text and get a clean, structured summary in seconds.",
+    tags: ["Claude API", "Python"],
+    href: "/projects/summarizer",
+  }
   {
     id: "image",
     icon: "🎨",
@@ -18,14 +26,6 @@ const projects = [
     description: "Upload any image and get detailed AI-generated descriptions and insights.",
     tags: ["Vision API", "React"],
     href: "/projects/image",
-  },
-  {
-    id: "summarizer",
-    icon: "📄",
-    title: "Doc Summarizer",
-    description: "Paste any text and get a clean, structured summary in seconds.",
-    tags: ["Claude API", "Python"],
-    href: "/projects/summarizer",
   },
 ];
 
@@ -133,11 +133,6 @@ export default function Home() {
             <a href="#projects" style={{ background: "#0a7c52", color: "#fff", padding: "0.9rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>View my work</a>
             <a href="#about" style={{ color: "#0a7c52", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>About me →</a>
           </div>
-          <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-            {skills.map((s) => (
-              <span key={s} style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", background: "#d4ede5", color: "#064d33", padding: "4px 12px", borderRadius: "20px" }}>{s}</span>
-            ))}
-          </div>
         </div>
         <div style={{ display: "flex", justifyContent: "flex-end", paddingRight: "2rem" }}>
           <HexPhoto />
@@ -194,9 +189,10 @@ export default function Home() {
         <div style={{ position: "relative", maxWidth: "800px", margin: "0 auto" }}>
           <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.25)", transform: "translateX(-50%)" }} />
           {[
+            { company: "UCSD Empathy & Emotion Lab", role: "Research Scientist", location: "San Diego, CA", period: "Dec 2021–Present", type: "Full-time", side: "right" },
             { company: "Experian", role: "Data Scientist", location: "San Diego, CA", period: "Mar–Jun 2025", type: "Intern", side: "left" },
             { company: "Big Table", role: "Business Analyst", location: "San Diego, CA", period: "Feb–May 2025", type: "Intern", side: "right" },
-            { company: "BroadCom", role: "R&D Engineer 2", location: "Bangalore, India", period: "Nov 2023–Jun 2024", type: "Full-time", side: "left" },
+            { company: "BroadCom", role: "Research and Development Engineer 2", location: "Bangalore, India", period: "Jul 2021–Jun 2024", type: "Full-time", side: "left" },
             { company: "VMware", role: "Member of Technical Staff 2", location: "Bangalore, India", period: "Jul 2021–Nov 2023", type: "Full-time", side: "right" },
             { company: "VMware", role: "R&D Intern", location: "Bangalore, India", period: "Jan–Jul 2021", type: "Intern", side: "left" },
             { company: "QtPi", role: "Full Stack Development Intern", location: "Bangalore, India", period: "May–Jul 2019", type: "Intern", side: "right" },

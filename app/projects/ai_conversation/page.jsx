@@ -15,7 +15,7 @@ export default function ConversationIntelligence() {
 
         {/* Header */}
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Featured Project</p>
-        <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.5rem", fontWeight: 600, lineHeight: "1.05", marginBottom: "1.5rem" }}>Conversation Intelligence</h1>
+        <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.5rem", fontWeight: 600, lineHeight: "1.05", marginBottom: "1.5rem" }}>AI Conversation Intelligence</h1>
         <p style={{ fontSize: "1.05rem", color: "#3a5a4a", lineHeight: "1.85", maxWidth: "600px", marginBottom: "2rem" }}>
           An AI-powered system that analyzes and summarizes conversations using NLP and transformer models. It extracts key insights, detects intent and sentiment, and enables smarter decision-making from unstructured conversational data.
         </p>
@@ -73,7 +73,7 @@ export default function ConversationIntelligence() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>Project Structure</h2>
           <div style={{ background: "#0d1f18", borderRadius: "8px", padding: "2rem" }}>
             <pre style={{ fontFamily: "monospace", fontSize: "0.85rem", color: "#9fe1cb", lineHeight: "1.9", margin: 0 }}>
-{`conversation_intelligence/
+{`ai_conversation_intelligence/
 ├── data/
 │   └── sample_conversations.csv
 ├── src/
