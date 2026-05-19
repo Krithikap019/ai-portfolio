@@ -231,13 +231,13 @@ export default function Home() {
         </a>
       </nav>
 
-      <section style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr", gap: "2rem", alignItems: "center", padding: "5rem 3.5rem 4rem" }}>
+      <section style={{ display: "grid", gridTemplateColumns: "1.6fr 1fr", gap: "2rem", alignItems: "center", padding: "5rem 3.5rem 4rem" }}>
         <div>
           <div style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.5rem", display: "flex", alignItems: "center", gap: "0.6rem" }}>
             <span style={{ width: "24px", height: "1.5px", background: "#0a7c52", display: "inline-block" }} />
             Data Scientist · AI Engineer · Developer
           </div>
-          <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(4rem, 8vw, 7rem)", lineHeight: "1", fontWeight: 600, letterSpacing: "-0.02em", marginBottom: "0.3rem" }}>
+          <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(4rem, 8vw, 8rem)", lineHeight: "1", fontWeight: 600, letterSpacing: "-0.02em", marginBottom: "0.3rem" }}>
             Krithika Suwarna
           </h1>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.5rem, 3vw, 2.5rem)", lineHeight: "1.1", fontWeight: 600, letterSpacing: "-0.01em", marginBottom: "1.5rem", color: "#0d1f18" }}>
