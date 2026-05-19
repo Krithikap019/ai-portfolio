@@ -38,8 +38,8 @@ export default function AllProjects() {
 
       {/* Nav */}
       <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.4rem 3.5rem", borderBottom: "1px solid rgba(10,124,82,0.2)", background: "#f4f8f6" }}>
-        <div style={{ fontFamily: "'Raleway', sans-serif", fontSize: "1.3rem", fontWeight: 300, letterSpacing: "0.10em" }}>
-            Krithika<span style={{ color: "#0a7c52" }}> </span>Suwarna
+        <div style={{ fontFamily: "'Raleway', sans-serif", fontSize: "1.2rem", fontWeight: 300, letterSpacing: "0.9em" }}>
+          Krithika<span style={{ color: "#0a7c52" }}> </span>Suwarna
         </div>
         <Link href="/" style={{ color: "#0a7c52", textDecoration: "none", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>← Back home</Link>
       </nav>
