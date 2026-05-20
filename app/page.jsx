@@ -351,7 +351,7 @@ export default function Home() {
         </div>
       </section>
 {/* Contact */}
-      <section id="contact" style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+      <section id="contact" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", width: "100%" }}>
         <div style={{ background: "#0a7c52", padding: "5rem 3.5rem" }}>
           <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginBottom: "1rem" }}>Let's connect</p>
           <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3rem", fontWeight: 600, color: "#fff", lineHeight: "1.1", marginBottom: "2rem" }}>
@@ -364,7 +364,7 @@ export default function Home() {
           <p style={{ fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)", marginBottom: "0.5rem" }}>Reach me on</p>
           <a href="https://github.com/Krithikap019" target="_blank" style={{ background: "rgba(255,255,255,0.06)", color: "#fff", padding: "1rem 2rem", fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center", border: "1px solid rgba(255,255,255,0.12)" }}>GitHub →</a>
           <a href="https://linkedin.com/in/krithika-suwarna" target="_blank" style={{ background: "rgba(255,255,255,0.06)", color: "#fff", padding: "1rem 2rem", fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center", border: "1px solid rgba(255,255,255,0.12)" }}>LinkedIn →</a>
-          <a href="mailto:ksuwarna@ucsd.edu" style={{ background: "#0a7c52", color: "#fff", padding: "1rem 2rem", fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center" }}>Email me →</a>
+          <a href="mailto:krithikap019@gmail.com" style={{ background: "#0a7c52", color: "#fff", padding: "1rem 2rem", fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center" }}>Email me →</a>
         </div>
       </section>
 
