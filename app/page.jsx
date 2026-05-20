@@ -360,8 +360,8 @@ export default function Home() {
             </h3>
           </div>
           <div style={{ textAlign: "right" }}>
-            <p style={{ fontSize: "1.3rem", fontWeight: 700, color: "rgba(255,255,255,0.70)", marginBottom: "0.4rem" }}>Krithika Suwarna</p>
-            <a href="mailto:krithikap019@gmail.com" style={{ fontSize: "1.1rem", color: "rgba(255,255,255,0.55), textDecoration: "none" }}>krithikap019@gmail.com</a>
+            <p style={{ fontSize: "1.3rem", fontWeight: 700, color: "rgba(255,255,255,0.75)", marginBottom: "0.4rem" }}>Krithika Suwarna</p>
+            <a href="mailto:krithikap019@gmail.com" style={{ fontSize: "1.1rem", color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>krithikap019@gmail.com</a>
           </div>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
