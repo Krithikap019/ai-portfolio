@@ -358,6 +358,7 @@ export default function Home() {
             <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.5rem", fontWeight: 600, color: "#fff", lineHeight: "1.05" }}>
               Looking for the <em style={{ fontStyle: "italic", color: "#12a869" }}>next challenge</em>
             </h3>
+            <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.45)", letterSpacing: "0.05em" }}>Open to full-time roles & freelance in Data Science · AI Engineering · Analytics</p>
           </div>
           <div style={{ textAlign: "right" }}>
             <p style={{ fontSize: "1.3rem", fontWeight: 700, color: "rgba(255,255,255,0.75)", marginBottom: "0.4rem" }}>Krithika Suwarna</p>
