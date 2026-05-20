@@ -332,12 +332,12 @@ export default function Home() {
                 <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4rem", fontWeight: 600, color: "rgba(10,124,82,0.25)", lineHeight: 1 }}>{cat.num}</span>
                 <div>
                   <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.1rem" }}>{cat.title}</h3>
-                  <p style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.3em", textTransform: "uppercase", color: "#0a7c52" }}>{cat.sub}</p>
+                  <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0a7c52" }}>{cat.sub}</p>
                 </div>
               </div>
               <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
                 {cat.skills.map((skill) => (
-                  <span key={skill} style={{ fontSize: "0.8rem", fontWeight: 600, padding: "4px 10px", borderRadius: "4px", background: "#fff", color: "#0d1f18", border: "1px solid rgba(10,124,82,0.15)" }}>
+                  <span key={skill} style={{ fontSize: "1rem", fontWeight: 600, padding: "4px 10px", borderRadius: "4px", background: "#fff", color: "#0d1f18", border: "1px solid rgba(10,124,82,0.15)" }}>
                     {skill}
                   </span>
                 ))}
