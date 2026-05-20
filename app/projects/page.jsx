@@ -13,10 +13,10 @@ const projects = [
   { id: 7, title: "Chicago Divvy Bicycle System Analysis", cat: "Data & Analytics", tags: ["Python", "Regression", "Predictive Modeling"], icon: "🚲", link: "#" },
   { id: 8, title: "Creative Gaming – Propensity & Uplift Modeling", cat: "Machine Learning", tags: ["Uplift Modeling", "Data Visualization"], icon: "🎮", link: "#" },
   { id: 9, title: "Art Gallery Database Management System", cat: "Cloud & Engineering", tags: ["SQL", "ETL", "Relational Database"], icon: "🎨", link: "/projects/art_gallery" },
-  { id: 10, title: "Mini DBaaS for Rideshare", cat: "Cloud & Engineering", tags: ["REST API", "Docker", "Flask"], icon: "🚗", link: "#" },
-  { id: 11, title: "Scalable Data Processing with Snowflake", cat: "Cloud & Engineering", tags: ["SQL", "ETL", "Snowflake"], icon: "❄️", link: "#" },
-  { id: 12, title: "FiTech – Data-Driven Credit Card Design", cat: "Data & Analytics", tags: ["A/B Testing", "Causal Inference", "ML"], icon: "💳", link: "#" },
-  { id: 13, title: "Pentathlon – Next Product to Buy", cat: "Machine Learning", tags: ["Random Forest", "Neural Networks", "ML"], icon: "🏅", link: "#" },
+  { id: 10, title: "Mini DBaaS for Rideshare", cat: "Cloud & Engineering", tags: ["REST API", "Docker", "Flask"], icon: "🚗", link: "/projects" },
+  { id: 11, title: "Scalable Data Processing with Snowflake", cat: "Cloud & Engineering", tags: ["SQL", "ETL", "Snowflake"], icon: "❄️", link: "/projects" },
+  { id: 12, title: "FiTech – Data-Driven Credit Card Design", cat: "Data & Analytics", tags: ["A/B Testing", "Causal Inference", "ML"], icon: "💳", link: "/projects/fintech" },
+  { id: 13, title: "Pentathlon – Next Product to Buy", cat: "Machine Learning", tags: ["Random Forest", "Neural Networks", "ML"], icon: "🏅", link: "/projects/nptb" },
 ];
 
 const categories = ["All", "Machine Learning", "NLP & AI", "Deep Learning", "Data & Analytics", "Cloud & Engineering"];
