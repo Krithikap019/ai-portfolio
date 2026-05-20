@@ -320,8 +320,8 @@ export default function Home() {
         <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4.2rem", fontWeight: 700, marginBottom: "3rem" }}>Tech <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Stack</em></h2>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0" }}>
           {[
-            { num: "01", title: "Machine Learning & AI", sub: "Core expertise", skills: ["XGBoost", "LightGBM", "Random Forest", "Neural Networks", "NLP", "RAG Systems", "FAISS", "Transformers", "Hugging Face", "LangChain", "CNN", "A/B Testing"] },
-            { num: "02", title: "Languages & Analysis", sub: "Primary tools", skills: ["Python", "SQL (Advanced)", "R", "PySpark", "Scala", "JavaScript"] },
+            { num: "01", title: "Languages & Analysis", sub: "Primary tools", skills: ["Python", "SQL (Advanced)", "R", "PySpark", "Scala", "JavaScript"] },
+            { num: "02", title: "Machine Learning & AI", sub: "Core expertise", skills: ["XGBoost", "LightGBM", "Random Forest", "Neural Networks", "NLP", "RAG Systems", "FAISS", "Transformers", "Hugging Face", "LangChain", "CNN", "A/B Testing"]  },
             { num: "03", title: "Data & Analytics", sub: "Where insights come from", skills: ["Pandas", "NumPy", "Tableau", "Power BI", "Snowflake", "BigQuery", "Databricks", "PostgreSQL", "ETL / ELT", "Airflow", "dbt"] },
             { num: "04", title: "Web & Frameworks", sub: "How I build and ship", skills: ["Streamlit", "FastAPI", "Flask", "React", "Next.js", "REST APIs"] },
             { num: "05", title: "Cloud & MLOps", sub: "Infrastructure", skills: ["AWS (EC2, S3)", "GCP", "Azure", "Docker", "MLflow", "CI/CD", "Git"] },
@@ -337,7 +337,7 @@ export default function Home() {
               </div>
               <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
                 {cat.skills.map((skill) => (
-                  <span key={skill} style={{ fontSize: "1rem", fontWeight: 600, padding: "4px 10px", borderRadius: "4px", background: "#fff", color: "#0d1f18", border: "1px solid rgba(10,124,82,0.15)" }}>
+                  <span key={skill} style={{ fontSize: "0.8rem", fontWeight: 600, padding: "4px 10px", borderRadius: "4px", background: "#fff", color: "#0d1f18", border: "1px solid rgba(10,124,82,0.15)" }}>
                     {skill}
                   </span>
                 ))}
