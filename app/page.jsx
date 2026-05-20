@@ -350,21 +350,21 @@ export default function Home() {
           ))}
         </div>
       </section>
-{/* Contact */}
-      <section id="contact" style={{ background: "#0d1f18", width: "100%", display: "grid", gridTemplateColumns: "1.2fr 1fr", alignItems: "center", padding: "3.5rem 3.5rem" }}>
-        <div>
-          <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "1rem" }}>Let's connect</p>
-          <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.5rem", fontWeight: 600, color: "#fff", lineHeight: "1.05", marginBottom: "2rem" }}>
-            Looking for the<br /><em style={{ fontStyle: "italic", color: "#12a869" }}>next challenge</em>
+    {/* Contact */}
+      <section id="contact" style={{ background: "#0d1f18", padding: "3.5rem 3.5rem" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "2rem", paddingBottom: "2rem", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
+          <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.5rem", fontWeight: 600, color: "#fff", lineHeight: "1.05" }}>
+            Looking for the <em style={{ fontStyle: "italic", color: "#12a869" }}>next<br />challenge</em>
           </h3>
-          <p style={{ fontSize: "1.1rem", fontWeight: 700, color: "#fff", marginBottom: "0.4rem" }}>Krithika Suwarna</p>
-          <a href="mailto:ksuwarna@ucsd.edu" style={{ fontSize: "1rem", color: "rgba(255,255,255,0.5)", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.2)", paddingBottom: "2px" }}>ksuwarna@ucsd.edu</a>
+          <div style={{ textAlign: "right" }}>
+            <p style={{ fontSize: "1.1rem", fontWeight: 700, color: "#fff", marginBottom: "0.4rem" }}>Krithika Suwarna</p>
+            <a href="mailto:ksuwarna@ucsd.edu" style={{ fontSize: "0.9rem", color: "#0a7c52", textDecoration: "none" }}>ksuwarna@ucsd.edu</a>
+          </div>
         </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-          <p style={{ fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)", marginBottom: "0.5rem" }}>Reach me on</p>
-          <a href="https://github.com/Krithikap019" target="_blank" style={{ background: "rgba(255,255,255,0.06)", color: "#fff", padding: "1rem 2rem", fontSize: "0.88rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center", border: "1px solid rgba(255,255,255,0.12)" }}>GitHub →</a>
-          <a href="https://linkedin.com/in/krithika-suwarna" target="_blank" style={{ background: "rgba(255,255,255,0.06)", color: "#fff", padding: "1rem 2rem", fontSize: "0.88rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center", border: "1px solid rgba(255,255,255,0.12)" }}>LinkedIn →</a>
-          <a href="mailto:ksuwarna@ucsd.edu" style={{ background: "#0a7c52", color: "#fff", padding: "1rem 2rem", fontSize: "0.88rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center" }}>Email me →</a>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
+          <a href="https://github.com/Krithikap019" target="_blank" style={{ background: "rgba(255,255,255,0.04)", color: "#fff", padding: "1rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center", border: "1px solid rgba(255,255,255,0.1)" }}>GitHub →</a>
+          <a href="https://linkedin.com/in/krithika-suwarna" target="_blank" style={{ background: "rgba(255,255,255,0.04)", color: "#fff", padding: "1rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center", border: "1px solid rgba(255,255,255,0.1)" }}>LinkedIn →</a>
+          <a href="mailto:ksuwarna@ucsd.edu" style={{ background: "#0a7c52", color: "#fff", padding: "1rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center" }}>Email me →</a>
         </div>
       </section>
 
