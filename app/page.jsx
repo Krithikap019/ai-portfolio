@@ -46,7 +46,7 @@ function ExperienceTimeline() {
     {
       id: 1, role: "Data Scientist", company: "Experian", location: "San Diego, CA",
       period: "Mar–Jun 2025", type: "Intern", side: "right",
-      desc: "Developed predictive models to identify high-value customer segments and optimize marketing campaign targeting. Built end-to-end ML pipelines using XGBoost and Python to drive QuickBooks upgrade decisions.",
+      desc: "Built and productionized end-to-end ML pipelines (classification, regression, time-series) on 2M+ transactional records with full MLflow tracking and Databricks-integrated Tableau dashboards for continuous KPI monitoring. Developed a customer segmentation and demand-elasticity framework across 10+ industries, validated through 10+ controlled experiments — delivering 15% conversion lift, 7% margin improvement, and $400K+ in projected annual savings.",
       tags: ["XGBoost", "Python", "ML", "Regression"],
     },
     {
