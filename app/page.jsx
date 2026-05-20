@@ -91,11 +91,11 @@ function ExperienceTimeline() {
     <>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.2rem" }}>
         <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6rem", fontWeight: 600, color: "#0d1f18" }}>{exp.role}</h3>
-        <span style={{ fontSize: "1rem", color: "#3a5a4a", flexShrink: 0, marginLeft: "1rem", paddingTop: "0.3rem" }}>{exp.period}</span>
+        <span style={{ fontSize: "0.9rem", color: "#3a5a4a", flexShrink: 0, marginLeft: "1rem", paddingTop: "0.3rem" }}>{exp.period}</span>
       </div>
       <p style={{ fontSize: "1rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.3rem" }}>{exp.company}</p>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <p style={{ fontSize: "1rem", color: "#888" }}>{exp.location}</p>
+        <p style={{ fontSize: "0.9rem", color: "#888" }}>{exp.location}</p>
         <span style={{ fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: exp.type === "Full-time" ? "#d4ede5" : "#f0f8f5", color: "#064d33", border: "1px solid rgba(10,124,82,0.2)" }}>{exp.type}</span>
       </div>
       {selected === exp.id && (
