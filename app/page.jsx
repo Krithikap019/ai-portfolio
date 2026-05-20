@@ -34,6 +34,7 @@ const skills = ["Python", "SQL", "Machine Learning", "LLM System", "NLP & RAG", 
 
 function ExperienceTimeline() {
   const [selected, setSelected] = useState(null);
+  const [hovered, setHovered] = useState(null);
 
   const experiences = [
     {
@@ -76,12 +77,13 @@ function ExperienceTimeline() {
 
   const cardStyle = (exp) => ({
     cursor: "pointer",
-    background: selected === exp.id ? "#fff" : "rgba(255,255,255,0.6)",
+    background: selected === exp.id ? "#fff" : hovered === exp.id ? "#fff" : "rgba(255,255,255,0.6)",
     borderRadius: "8px",
     padding: "1rem",
-    border: selected === exp.id ? "1px solid #0a7c52" : "1px solid rgba(10,124,82,0.12)",
-    transition: "all 0.3s ease",
-    boxShadow: selected === exp.id ? "0 4px 20px rgba(10,124,82,0.1)" : "0 1px 4px rgba(0,0,0,0.04)",
+    border: selected === exp.id ? "1px solid #0a7c52" : hovered === exp.id ? "1px solid #0a7c52" : "1px solid rgba(10,124,82,0.12)",
+    transition: "all 0.2s ease",
+    boxShadow: selected === exp.id ? "0 12px 30px rgba(10,124,82,0.12)" : hovered === exp.id ? "0 8px 24px rgba(10,124,82,0.1)" : "0 1px 4px rgba(0,0,0,0.04)",
+    transform: hovered === exp.id && selected !== exp.id ? "translateY(-3px)" : "translateY(0)",
     textAlign: "left",
   });
 
@@ -118,7 +120,12 @@ function ExperienceTimeline() {
           {/* Left */}
           <div style={{ paddingRight: "1.5rem", paddingTop: "0.2rem", transition: "transform 0.3s ease", transform: selected === exp.id && exp.side === "left" ? "translateX(-12px)" : "translateX(0)" }}>
             {exp.side === "left" && (
-              <div onClick={() => setSelected(selected === exp.id ? null : exp.id)} style={cardStyle(exp)}>
+              <div
+                onClick={() => setSelected(selected === exp.id ? null : exp.id)}
+                onMouseEnter={() => setHovered(exp.id)}
+                onMouseLeave={() => setHovered(null)}
+                style={cardStyle(exp)}
+              >
                 {renderContent(exp)}
               </div>
             )}
@@ -135,7 +142,12 @@ function ExperienceTimeline() {
           {/* Right */}
           <div style={{ paddingLeft: "1.5rem", paddingTop: "0.2rem", transition: "transform 0.3s ease", transform: selected === exp.id && exp.side === "right" ? "translateX(12px)" : "translateX(0)" }}>
             {exp.side === "right" && (
-              <div onClick={() => setSelected(selected === exp.id ? null : exp.id)} style={cardStyle(exp)}>
+              <div
+                onClick={() => setSelected(selected === exp.id ? null : exp.id)}
+                onMouseEnter={() => setHovered(exp.id)}
+                onMouseLeave={() => setHovered(null)}
+                style={cardStyle(exp)}
+              >
                 {renderContent(exp)}
               </div>
             )}
