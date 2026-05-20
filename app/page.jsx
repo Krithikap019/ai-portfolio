@@ -280,7 +280,7 @@ export default function Home() {
       <section id="projects" style={{ padding: "5rem 3.5rem" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "3rem" }}>
           <div>
-            <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Selected work</p>
+            <p style={{ fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Selected work</p>
             <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4.2rem", fontWeight: 700, marginBottom: "3rem" }}>Featured <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Projects</em></h2>
           </div>
           <a href="/projects" style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "#0a7c52", textDecoration: "none", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>View all →</a>
