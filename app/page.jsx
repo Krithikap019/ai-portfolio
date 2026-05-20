@@ -350,7 +350,7 @@ export default function Home() {
       {/* Experience */}
       <section id="experience" style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Work</p>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "5rem", fontWeight: 700, marginBottom: "3rem" }}>The Professional <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Journey</em></h2>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4.5rem", fontWeight: 700, marginBottom: "3rem" }}>The Professional <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Journey</em></h2>
         <ExperienceTimeline />
       </section>
 
