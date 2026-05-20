@@ -329,7 +329,7 @@ export default function Home() {
           ].map((cat, i) => (
             <div key={cat.num} style={{ padding: "2rem", borderBottom: "1px solid rgba(10,124,82,0.12)", borderRight: i % 2 === 0 ? "1px solid rgba(10,124,82,0.12)" : "none", background: [0, 3, 4].includes(i) ? "#c8dfd4" : "transparent" }}>
               <div style={{ display: "flex", alignItems: "baseline", gap: "1rem", marginBottom: "0.8rem" }}>
-                <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4rem", fontWeight: 600, color: "rgba(10,124,82,0.25)", lineHeight: 1 }}>{cat.num}</span>
+                <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4rem", fontWeight: 600, color: "rgba(10,124,82,0.45)", lineHeight: 1 }}>{cat.num}</span>
                 <div>
                   <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.1rem" }}>{cat.title}</h3>
                   <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0a7c52" }}>{cat.sub}</p>
