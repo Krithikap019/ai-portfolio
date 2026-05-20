@@ -350,16 +350,18 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      <section id="contact" style={{ margin: "0", background: "#0a7c52", borderRadius: "0", padding: "3rem 3.5rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <div>
-          <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.2rem", fontWeight: 600, color: "#fff", marginBottom: "0.5rem" }}>Let's build something</h3>
-          <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.9rem" }}>Open to freelance projects and full-time roles</p>
-        </div>
-        <div style={{ display: "flex", gap: "0.8rem" }}>
-          <a href="https://github.com/Krithikap019" target="_blank" style={{ background: "rgba(255,255,255,0.15)", color: "#fff", padding: "0.75rem 1.5rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>GitHub</a>
-          <a href="https://www.linkedin.com/in/krithika-suwarna-b8240b17b/" target="_blank" style={{ background: "rgba(255,255,255,0.15)", color: "#fff", padding: "0.75rem 1.5rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>LinkedIn</a>
-          <a href="mailto:krithikap019@gmail.com" style={{ background: "#fff", color: "#0a7c52", padding: "0.75rem 1.5rem", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>Get in touch</a>
+{/* Contact */}
+      <section id="contact" style={{ background: "#0d1f18", padding: "5rem 3.5rem", textAlign: "center" }}>
+        <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "1rem" }}>Open to opportunities</p>
+        <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.5rem", fontWeight: 600, color: "#fff", marginBottom: "0.5rem" }}>Krithika Suwarna</h3>
+        <a href="mailto:ksuwarna@ucsd.edu" style={{ fontSize: "1rem", color: "rgba(255,255,255,0.5)", textDecoration: "none", display: "block", marginBottom: "1.5rem" }}>ksuwarna@ucsd.edu</a>
+        <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.6)", lineHeight: "1.8", maxWidth: "480px", margin: "0 auto 2.5rem" }}>
+          Available for full-time roles in data science, AI engineering, and analytics.
+        </p>
+        <div style={{ display: "flex", gap: "1rem", justifyContent: "center" }}>
+          <a href="https://github.com/Krithikap019" target="_blank" style={{ background: "rgba(255,255,255,0.08)", color: "#fff", padding: "0.85rem 1.8rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", border: "1px solid rgba(255,255,255,0.15)" }}>GitHub</a>
+          <a href="https://linkedin.com/in/krithika-suwarna" target="_blank" style={{ background: "rgba(255,255,255,0.08)", color: "#fff", padding: "0.85rem 1.8rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", border: "1px solid rgba(255,255,255,0.15)" }}>LinkedIn</a>
+          <a href="mailto:ksuwarna@ucsd.edu" style={{ background: "#0a7c52", color: "#fff", padding: "0.85rem 1.8rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>Get in touch</a>
         </div>
       </section>
 
