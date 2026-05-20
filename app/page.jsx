@@ -358,11 +358,11 @@ export default function Home() {
             <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.5rem", fontWeight: 600, color: "#fff", lineHeight: "1.05", marginBottom: "0.9rem" }}>
               Looking for the <em style={{ fontStyle: "italic", color: "#12a869" }}>next challenge</em>
             </h3>
-            <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.45)", letterSpacing: "0.05em" }}>Open to full-time roles & freelance in Data Science · AI Engineering · Analytics</p>
+            <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.60)", letterSpacing: "0.05em" }}>Open to full-time roles & freelance in Data Science · AI Engineering · Analytics</p>
           </div>
           <div style={{ textAlign: "right" }}>
-            <p style={{ fontSize: "1.3rem", fontWeight: 700, color: "rgba(255,255,255,0.75)", marginBottom: "0.4rem" }}>Krithika Suwarna</p>
-            <a href="mailto:krithikap019@gmail.com" style={{ fontSize: "1.1rem", color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>krithikap019@gmail.com</a>
+            <p style={{ fontSize: "1.3rem", fontWeight: 700, color: "rgba(255,255,255,0.80)", marginBottom: "0.4rem" }}>Krithika Suwarna</p>
+            <a href="mailto:krithikap019@gmail.com" style={{ fontSize: "1.1rem", color: "rgba(255,255,255,0.60)", textDecoration: "none" }}>krithikap019@gmail.com</a>
           </div>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
