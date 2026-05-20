@@ -281,7 +281,7 @@ export default function Home() {
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "3rem" }}>
           <div>
             <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Selected work</p>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.2rem", fontWeight: 700, marginBottom: "3rem" }}>Featured <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Projects</em></h2>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4.2rem", fontWeight: 700, marginBottom: "3rem" }}>Featured <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Projects</em></h2>
           </div>
           <a href="/projects" style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "#0a7c52", textDecoration: "none", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>View all →</a>
         </div>
@@ -293,7 +293,7 @@ export default function Home() {
       <section id="about" style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }}>
         <div>
           <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "1rem" }}>About me</p>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.2rem", fontWeight: 700, marginBottom: "3rem" }}>Hi, I'm <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Krithika</em></h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4.2rem", fontWeight: 700, marginBottom: "3rem" }}>Hi, I'm <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Krithika</em></h2>
           <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", marginBottom: "1rem" }}>
             I'm a data scientist and AI engineer who loves building things that actually work. Not just models — systems that make decisions smarter, processes faster, and outcomes measurable.
           </p>
