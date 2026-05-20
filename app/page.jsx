@@ -173,8 +173,8 @@ function ProjectCard({ icon, title, description, tags, color, href }) {
         onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#efefef"; e.currentTarget.style.transform = "translateY(0)"; }}
       >
         <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>{icon}</div>
-        <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.5rem" }}>{title}</h3>
-        <p style={{ fontSize: "0.85rem", color: "#666", lineHeight: "1.75", marginBottom: "1.2rem" }}>{description}</p>
+        <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.5rem" }}>{title}</h3>
+        <p style={{ fontSize: "0.9rem", color: "#666", lineHeight: "1.75", marginBottom: "1.2rem" }}>{description}</p>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
             {tags.map((tag) => (
@@ -322,7 +322,7 @@ export default function Home() {
           {[
             { num: "01", title: "Languages & Analysis", sub: "Primary tools", skills: ["Python", "SQL (Advanced)", "R", "PySpark", "Scala", "JavaScript"] },
             { num: "02", title: "Machine Learning & AI", sub: "Core expertise", skills: ["XGBoost", "LightGBM", "Random Forest", "Neural Networks", "NLP", "RAG Systems", "FAISS", "Transformers", "Hugging Face", "LangChain", "CNN", "A/B Testing"]  },
-            { num: "03", title: "Data & Analytics", sub: "Where insights come from", skills: ["Pandas", "NumPy", "Tableau", "Power BI", "Snowflake", "BigQuery", "Databricks", "PostgreSQL", "ETL / ELT", "Airflow", "dbt"] },
+            { num: "03", title: "Data & Analytics", sub: "Where insights come from", skills: ["Pandas", "NumPy", "Snowflake", "BigQuery", "Databricks", "PostgreSQL", "ETL / ELT", "Airflow", "dbt"] },
             { num: "04", title: "Web & Frameworks", sub: "How I build and ship", skills: ["Streamlit", "FastAPI", "Flask", "React", "Next.js", "REST APIs"] },
             { num: "05", title: "Cloud & MLOps", sub: "Infrastructure", skills: ["AWS (EC2, S3)", "GCP", "Azure", "Docker", "MLflow", "CI/CD", "Git"] },
             { num: "06", title: "Visualization & BI", sub: "Insights layer", skills: ["Tableau", "Power BI", "Grafana", "Looker", "KPI Dashboards", "Executive Reporting"] },
@@ -331,7 +331,7 @@ export default function Home() {
               <div style={{ display: "flex", alignItems: "baseline", gap: "1rem", marginBottom: "0.8rem" }}>
                 <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.5rem", fontWeight: 600, color: "rgba(10,124,82,0.45)", lineHeight: 1 }}>{cat.num}</span>
                 <div>
-                  <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.1rem" }}>{cat.title}</h3>
+                  <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.1rem" }}>{cat.title}</h3>
                   <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0a7c52" }}>{cat.sub}</p>
                 </div>
               </div>
