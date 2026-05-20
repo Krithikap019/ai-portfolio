@@ -31,7 +31,7 @@ export default function ArtGalleryProject() {
           {["PostgreSQL", "PHP", "SQL", "ER Modeling", "RBAC", "Database Design", "Full-Stack"].map((t) => (
             <span key={t} style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", background: "#d4ede5", color: "#064d33", padding: "4px 12px", borderRadius: "20px" }}>{t}</span>
           ))}
-          <a href="https://krithikapadmana-ix5pg9.filedrop.me/s/8163b395-e6ee-4410-907a-09f68de0620b" target="_blank" style={{ marginLeft: "auto", background: "#0a7c52", color: "#fff", padding: "0.75rem 1.8rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>
+          <a href="https://publuu.com/flip-book/1112801/2477878/page/28" target="_blank" style={{ marginLeft: "auto", background: "#0a7c52", color: "#fff", padding: "0.75rem 1.8rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>
             View Research Paper →
           </a>
         </div>
@@ -151,7 +151,7 @@ Key Relationships
             <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "#fff", marginBottom: "0.4rem" }}>Read the research paper</h3>
             <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.9rem" }}>Full schema design, ER diagrams, and query documentation</p>
           </div>
-          <a href="https://krithikapadmana-ix5pg9.filedrop.me/s/8163b395-e6ee-4410-907a-09f68de0620b" target="_blank" style={{ background: "#fff", color: "#0a7c52", padding: "0.9rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", flexShrink: 0 }}>
+          <a href="https://publuu.com/flip-book/1112801/2477878/page/28" target="_blank" style={{ background: "#fff", color: "#0a7c52", padding: "0.9rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", flexShrink: 0 }}>
             View Paper →
           </a>
         </div>
