@@ -151,7 +151,7 @@ Key Relationships
             <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "#fff", marginBottom: "0.4rem" }}>Read the research paper</h3>
             <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.9rem" }}>Full schema design, ER diagrams, and query documentation</p>
           </div>
-          <a href="YOUR_RESEARCH_PAPER_LINK_HERE" target="_blank" style={{ background: "#fff", color: "#0a7c52", padding: "0.9rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", flexShrink: 0 }}>
+          <a href="https://krithikapadmana-ix5pg9.filedrop.me/s/8163b395-e6ee-4410-907a-09f68de0620b" target="_blank" style={{ background: "#fff", color: "#0a7c52", padding: "0.9rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", flexShrink: 0 }}>
             View Paper →
           </a>
         </div>
