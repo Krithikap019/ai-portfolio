@@ -115,7 +115,7 @@ function ExperienceTimeline() {
     <div style={{ position: "relative", maxWidth: "1100px", margin: "0 auto" }}>
       <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.25)", transform: "translateX(-50%)" }} />
       {experiences.map((exp) => (
-        <div key={exp.id} style={{ display: "grid", gridTemplateColumns: "1fr 40px 1fr", gap: "0 1rem", marginBottom: "0.4rem", alignItems: "start" }}>
+        <div key={exp.id} style={{ display: "grid", gridTemplateColumns: "1fr 40px 1fr", gap: "0 1rem", marginBottom: "0.2rem", alignItems: "start" }}>
 
           {/* Left */}
           <div style={{ paddingRight: "1.5rem", paddingTop: "0.2rem", transition: "transform 0.3s ease", transform: selected === exp.id && exp.side === "left" ? "translateX(-12px)" : "translateX(0)" }}>
@@ -329,7 +329,7 @@ export default function Home() {
           ].map((cat, i) => (
             <div key={cat.num} style={{ padding: "2rem", borderBottom: "1px solid rgba(10,124,82,0.12)", borderRight: i % 2 === 0 ? "1px solid rgba(10,124,82,0.12)" : "none", background: [0, 3, 4].includes(i) ? "#c8dfd4" : "transparent" }}>
               <div style={{ display: "flex", alignItems: "baseline", gap: "1rem", marginBottom: "0.8rem" }}>
-                <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4rem", fontWeight: 600, color: "rgba(10,124,82,0.45)", lineHeight: 1 }}>{cat.num}</span>
+                <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.5rem", fontWeight: 600, color: "rgba(10,124,82,0.45)", lineHeight: 1 }}>{cat.num}</span>
                 <div>
                   <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.1rem" }}>{cat.title}</h3>
                   <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0a7c52" }}>{cat.sub}</p>
