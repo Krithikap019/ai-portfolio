@@ -314,6 +314,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Tech Stack */}
+      <section style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
+        <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Skills & Tools</p>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, marginBottom: "3rem" }}>
+          The <em style={{ color: "#0a7c52", fontStyle: "italic" }}>stack.</em>
+        </h2>
+        {[
+          { num: "01", title: "Machine Learning & AI", sub: "Core expertise", skills: ["XGBoost", "LightGBM", "Random Forest", "Neural Networks", "NLP", "RAG Systems", "FAISS", "Transformers", "Hugging Face", "LangChain", "CNN", "A/B Testing", "Causal Inference"] },
+          { num: "02", title: "Languages & Analysis", sub: "Primary tools", skills: ["Python", "SQL (Advanced)", "R", "PySpark", "Scala", "JavaScript"] },
+          { num: "03", title: "Data & Analytics", sub: "Where insights come from", skills: ["Pandas", "NumPy", "Tableau", "Power BI", "Snowflake", "BigQuery", "Databricks", "PostgreSQL", "ETL / ELT Pipelines", "Airflow", "dbt", "Apache Spark"] },
+          { num: "04", title: "Web & Frameworks", sub: "How I build and ship", skills: ["Streamlit", "FastAPI", "Flask", "React", "Next.js", "REST APIs"] },
+          { num: "05", title: "Cloud & MLOps", sub: "Infrastructure and deployment", skills: ["AWS (EC2, S3)", "GCP", "Azure", "Docker", "MLflow", "CI/CD", "Git", "Grafana", "Looker"] },
+        ].map((cat, i, arr) => (
+          <div key={cat.num} style={{ display: "grid", gridTemplateColumns: "80px 1fr", gap: "2rem", padding: "2.5rem 0", borderBottom: i < arr.length - 1 ? "1px solid rgba(10,124,82,0.12)" : "none", alignItems: "start" }}>
+            <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 600, color: "rgba(10,124,82,0.2)", lineHeight: 1 }}>{cat.num}</span>
+            <div>
+              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.2rem" }}>{cat.title}</h3>
+              <p style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "1rem" }}>{cat.sub}</p>
+              <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+                {cat.skills.map((skill) => (
+                  <span key={skill} style={{ fontSize: "0.72rem", fontWeight: 600, padding: "5px 12px", borderRadius: "4px", background: "#fff", color: "#0d1f18", border: "1px solid rgba(10,124,82,0.15)" }}>
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </section>
+
       {/* Experience */}
       <section id="experience" style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Work</p>

@@ -5,14 +5,14 @@ export default function CovidDetection() {
   return (
     <main style={{ background: "#f4f8f6", minHeight: "100vh", fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#0d1f18" }}>
       <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.4rem 3.5rem", borderBottom: "1px solid rgba(10,124,82,0.2)", background: "#f4f8f6" }}>
-        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.5rem", fontWeight: 600 }}>
-          Krithika<span style={{ color: "#0a7c52" }}>.</span>S
+        <div style={{ fontFamily: "'Raleway', sans-serif", fontSize: "1.2rem", fontWeight: 300, letterSpacing: "0.09em" }}>
+          Krithika<span style={{ color: "#0a7c52" }}> </span>Suwarna
         </div>
         <div style={{ display: "flex", gap: "2.5rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-          <Link href="/projects" style={{ color: "#0d1f18", textDecoration: "none" }}>Projects</Link>
-          <Link href="/#about" style={{ color: "#0d1f18", textDecoration: "none" }}>About</Link>
-          <Link href="/#experience" style={{ color: "#0d1f18", textDecoration: "none" }}>Experience</Link>
-          <Link href="/#contact" style={{ color: "#0d1f18", textDecoration: "none" }}>Contact</Link>
+        <Link href="/projects" style={{ color: "#0d1f18", textDecoration: "none" }}>Projects</Link>
+        <Link href="/#about" style={{ color: "#0d1f18", textDecoration: "none" }}>About</Link>
+        <Link href="/#experience" style={{ color: "#0d1f18", textDecoration: "none" }}>Experience</Link>
+        <Link href="/#contact" style={{ color: "#0d1f18", textDecoration: "none" }}>Contact</Link>
         </div>
         <a href="mailto:ksuwarna@ucsd.edu" style={{ background: "#0a7c52", color: "#fff", padding: "0.6rem 1.5rem", fontSize: "0.78rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>Hire me</a>
       </nav>
