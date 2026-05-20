@@ -115,7 +115,7 @@ function ExperienceTimeline() {
     <div style={{ position: "relative", maxWidth: "1100px", margin: "0 auto" }}>
       <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.25)", transform: "translateX(-50%)" }} />
       {experiences.map((exp) => (
-        <div key={exp.id} style={{ display: "grid", gridTemplateColumns: "1fr 40px 1fr", gap: "0 1rem", marginBottom: "0.8rem", alignItems: "start" }}>
+        <div key={exp.id} style={{ display: "grid", gridTemplateColumns: "1fr 40px 1fr", gap: "0 1rem", marginBottom: "0.4rem", alignItems: "start" }}>
 
           {/* Left */}
           <div style={{ paddingRight: "1.5rem", paddingTop: "0.2rem", transition: "transform 0.3s ease", transform: selected === exp.id && exp.side === "left" ? "translateX(-12px)" : "translateX(0)" }}>
@@ -132,7 +132,7 @@ function ExperienceTimeline() {
           </div>
 
           {/* Dot */}
-          <div style={{ display: "flex", justifyContent: "center", paddingTop: "0.8rem" }}>
+          <div style={{ display: "flex", justifyContent: "center", paddingTop: "0.4rem" }}>
             <div
               onClick={() => setSelected(selected === exp.id ? null : exp.id)}
               style={{ width: "14px", height: "14px", borderRadius: "50%", background: selected === exp.id ? "#0a7c52" : "#fff", border: "2.5px solid #0a7c52", zIndex: 1, flexShrink: 0, cursor: "pointer", transition: "all 0.2s", transform: selected === exp.id ? "scale(1.3)" : "scale(1)" }}
@@ -331,7 +331,7 @@ export default function Home() {
               <div style={{ display: "flex", alignItems: "baseline", gap: "1rem", marginBottom: "0.8rem" }}>
                 <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4rem", fontWeight: 600, color: "rgba(10,124,82,0.45)", lineHeight: 1 }}>{cat.num}</span>
                 <div>
-                  <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.1rem" }}>{cat.title}</h3>
+                  <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.1rem" }}>{cat.title}</h3>
                   <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0a7c52" }}>{cat.sub}</p>
                 </div>
               </div>
