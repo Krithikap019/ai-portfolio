@@ -30,7 +30,7 @@ const projects = [
   },
 ];
 
-const skills = ["Python", "SQL", "Machine Learning", "NLP & RAG", "XGBoost", "Deep Learning", "Tableau", "Snowflake", "PyTorch", "A/B Testing", "FAISS", "Docker", "AWS", "React", "Streamlit", "Next.js"];;
+const skills = ["Python", "SQL", "Machine Learning", "NLP & RAG", "XGBoost", "Tableau", "Snowflake", "PyTorch", "A/B Testing", "Docker", "AWS", "React", "Next.js"];;
 
 function ExperienceTimeline() {
   const [selected, setSelected] = useState(null);
@@ -256,13 +256,29 @@ export default function Home() {
         </div>
       </section>
 
-      <div style={{ borderTop: "1px solid rgba(10,124,82,0.2)", borderBottom: "1px solid rgba(10,124,82,0.2)", padding: "1rem 3.5rem", display: "flex", gap: "1.5rem", flexWrap: "nowrap", alignItems: "center", background: "#edf5f1", overflowX: "auto", whiteSpace: "nowrap" }}>
-        {skills.map((s, i) => (
-          <span key={s} style={{ display: "flex", alignItems: "center", gap: "0.6rem", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#064d33" }}>
-            {i > 0 && <span style={{ color: "#0a7c52", opacity: 0.4 }}>◆</span>}
-            {s}
-          </span>
-        ))}
+      {/* Skills marquee */}
+      <div style={{ borderTop: "1px solid rgba(10,124,82,0.2)", borderBottom: "1px solid rgba(10,124,82,0.2)", background: "#edf5f1", overflow: "hidden", padding: "1rem 0" }}>
+        <style>{`
+          @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .marquee-track {
+            display: flex;
+            gap: 2rem;
+            width: max-content;
+            animation: marquee 20s linear infinite;
+          }
+          .marquee-track:hover { animation-play-state: paused; }
+        `}</style>
+        <div className="marquee-track">
+          {[...skills, ...skills].map((s, i) => (
+            <span key={i} style={{ display: "flex", alignItems: "center", gap: "0.6rem", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#064d33", flexShrink: 0 }}>
+              {i > 0 && <span style={{ color: "#0a7c52", opacity: 0.4 }}>◆</span>}
+              {s}
+            </span>
+          ))}
+        </div>
       </div>
 
       <section id="projects" style={{ padding: "5rem 3.5rem" }}>
