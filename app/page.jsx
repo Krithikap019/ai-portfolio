@@ -350,14 +350,14 @@ export default function Home() {
       {/* Experience */}
       <section id="experience" style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Work</p>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4.2rem", fontWeight: 700, marginBottom: "3rem" }}>The Professional <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Journey</em></h2>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4.2rem", fontWeight: 700, marginBottom: "3rem" }}>Professional <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Journey</em></h2>
         <ExperienceTimeline />
       </section>
 
 {/* Education */}
       <section style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Academic</p>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4.2rem", fontWeight: 700, marginBottom: "3rem" }}>The Academic <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Chapter</em></h2>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4.2rem", fontWeight: 700, marginBottom: "3rem" }}>Academic <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Chapter</em></h2>
         <div style={{ position: "relative", paddingLeft: "1.8rem" }}>
           <div style={{ position: "absolute", left: "7px", top: 0, bottom: 0, width: "1.5px", background: "rgba(10,124,82,0.25)" }} />
           {[
