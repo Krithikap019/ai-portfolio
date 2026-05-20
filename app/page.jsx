@@ -100,7 +100,7 @@ function ExperienceTimeline() {
       </div>
       {selected === exp.id && (
         <div style={{ marginTop: "0.8rem", paddingTop: "0.8rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
-          <p style={{ fontSize: "0.82rem", color: "#3a5a4a", lineHeight: "1.7", marginBottom: "0.8rem" }}>{exp.desc}</p>
+          <p style={{ fontSize: "0.85rem", color: "#3a5a4a", lineHeight: "1.7", marginBottom: "0.8rem" }}>{exp.desc}</p>
           <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
             {exp.tags.map((tag) => (
               <span key={tag} style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", padding: "2px 8px", borderRadius: "20px", background: "#d4ede5", color: "#064d33" }}>{tag}</span>
@@ -304,7 +304,7 @@ export default function Home() {
           Currently open to full-time roles in data science, AI, and analytics.
           </p>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", paddingTop: "6rem" }}>
           {[["4+", "Years of Experience"], ["12+", "Projects Shipped"], ["2M+", "Records Analysed"], ["$780K+", "Total Impact"]].map(([num, label]) => (
             <div key={label} style={{ background: "#edf5f1", borderRadius: "8px", padding: "1.5rem", textAlign: "center", border: "1px solid rgba(10,124,82,0.15)" }}>
               <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.5rem", fontWeight: 600, color: "#0a7c52", display: "block" }}>{num}</span>
