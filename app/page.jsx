@@ -317,7 +317,7 @@ export default function Home() {
 {/* Tech Stack */}
       <section style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Skills & Tools</p>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.2rem", fontWeight: 700, marginBottom: "3rem" }}>Tech <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Stack</em></h2>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.5rem", fontWeight: 700, marginBottom: "3rem" }}>Tech <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Stack</em></h2>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0" }}>
           {[
             { num: "01", title: "Machine Learning & AI", sub: "Core expertise", skills: ["XGBoost", "LightGBM", "Random Forest", "Neural Networks", "NLP", "RAG Systems", "FAISS", "Transformers", "Hugging Face", "LangChain", "CNN", "A/B Testing"] },
