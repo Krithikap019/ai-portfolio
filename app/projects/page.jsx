@@ -8,7 +8,7 @@ const projects = [
   { id: 2, title: "Intuit – Predictive Analytics for QuickBooks", cat: "Machine Learning", tags: ["XGBoost", "Python", "Regression"], icon: "📊", link: "#" },
   { id: 3, title: "S-Mobile Customer Churn Prediction", cat: "Machine Learning", tags: ["Neural Networks", "Random Forest", "Python"], icon: "📱", link: "#" },
   { id: 4, title: "Amazon Health & Personal Care Recommender", cat: "NLP & AI", tags: ["SVD", "NLP", "Python", "Regression"], icon: "🛒", link: "#" },
-  { id: 5, title: "COVID-19 Detection from Chest X-rays", cat: "Deep Learning", tags: ["CNN", "VGG16", "Random Forest"], icon: "🏥", link: "#" },
+  { id: 5, title: "COVID-19 Detection from Chest X-rays", cat: "Deep Learning", tags: ["CNN", "VGG16", "Random Forest"], icon: "🏥", link: "/projects/covid_detection" },
   { id: 6, title: "Target Brazil – Performance & Sales Analysis", cat: "Data & Analytics", tags: ["Tableau", "Dashboard", "SQL"], icon: "🎯", link: "#" },
   { id: 7, title: "Chicago Divvy Bicycle System Analysis", cat: "Data & Analytics", tags: ["Python", "Regression", "Predictive Modeling"], icon: "🚲", link: "#" },
   { id: 8, title: "Creative Gaming – Propensity & Uplift Modeling", cat: "Machine Learning", tags: ["Uplift Modeling", "Data Visualization"], icon: "🎮", link: "#" },
