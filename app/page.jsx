@@ -174,7 +174,7 @@ function ProjectCard({ icon, title, description, tags, color, href }) {
       >
         <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>{icon}</div>
         <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.5rem" }}>{title}</h3>
-        <p style={{ fontSize: "0.9rem", color: "#666", lineHeight: "1.75", marginBottom: "1.2rem" }}>{description}</p>
+        <p style={{ fontSize: "0.85rem", color: "#666", lineHeight: "1.75", marginBottom: "1.2rem" }}>{description}</p>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
             {tags.map((tag) => (
