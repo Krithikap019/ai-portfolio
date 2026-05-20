@@ -355,7 +355,7 @@ export default function Home() {
        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "2rem", paddingBottom: "2rem", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
           <div>
             <p style={{ fontSize: "0.9rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#12a869", marginBottom: "0.8rem" }}>Let's connect</p>
-            <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.5rem", fontWeight: 600, color: "#fff", lineHeight: "1.05" }}>
+            <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.5rem", fontWeight: 600, color: "#fff", lineHeight: "1.05", marginBottom: "0.9rem" }}>
               Looking for the <em style={{ fontStyle: "italic", color: "#12a869" }}>next challenge</em>
             </h3>
             <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.45)", letterSpacing: "0.05em" }}>Open to full-time roles & freelance in Data Science · AI Engineering · Analytics</p>
