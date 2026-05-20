@@ -360,8 +360,8 @@ export default function Home() {
             </h3>
           </div>
           <div style={{ textAlign: "right" }}>
-            <p style={{ fontSize: "1.3rem", fontWeight: 700, color: "#fff", marginBottom: "0.4rem" }}>Krithika Suwarna</p>
-            <a href="mailto:ksuwarna@ucsd.edu" style={{ fontSize: "1.1rem", color: "#12a869", textDecoration: "none" }}>ksuwarna@ucsd.edu</a>
+            <p style={{ fontSize: "1.3rem", fontWeight: 700, color: "rgba(255,255,255,0.75)", marginBottom: "0.4rem" }}>Krithika Suwarna</p>
+            <a href="mailto:krithikap019@gmail.com" style={{ fontSize: "1.1rem", color: "#12a869", textDecoration: "none" }}>krithikap019@gmail.com"</a>
           </div>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
@@ -369,8 +369,14 @@ export default function Home() {
           onMouseEnter={(e) => e.currentTarget.style.background = "rgba(255,255,255,0.18)"}
           onMouseLeave={(e) => e.currentTarget.style.background = "rgba(255,255,255,0.1)"}
           style={{ background: "rgba(255,255,255,0.1)", color: "#fff", padding: "1rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center", border: "1px solid rgba(255,255,255,0.1)", transition: "background 0.2s" }}>GitHub →</a>
-          <a href="https://linkedin.com/in/krithika-suwarna" target="_blank" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", padding: "1rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center", border: "1px solid rgba(255,255,255,0.1)" }}>LinkedIn →</a>
-          <a href="mailto:ksuwarna@ucsd.edu" style={{ background: "#0a7c52", color: "#fff", padding: "1rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center" }}>Email me →</a>
+          <a href="https://linkedin.com/in/krithika-suwarna" target="_blank"
+          onMouseEnter={(e) => e.currentTarget.style.background = "rgba(255,255,255,0.18)"}
+          onMouseLeave={(e) => e.currentTarget.style.background = "rgba(255,255,255,0.1)"}
+          style={{ background: "rgba(255,255,255,0.1)", color: "#fff", padding: "1rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center", border: "1px solid rgba(255,255,255,0.1)", transition: "background 0.2s" }}>LinkedIn →</a>
+          <a href="mailto:ksuwarna@ucsd.edu"
+          onMouseEnter={(e) => e.currentTarget.style.background = "#064d33"}
+          onMouseLeave={(e) => e.currentTarget.style.background = "#0a7c52"}
+          style={{ background: "#0a7c52", color: "#fff", padding: "1rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", textAlign: "center", transition: "background 0.2s" }}>Email me →</a>
         </div>
       </section>
 
