@@ -118,4 +118,12 @@ Triage Recommendations for Healthcare Teams`}
             <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "#fff", marginBottom: "0.4rem" }}>Read the full paper</h3>
             <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.9rem" }}>Published on IEEE Xplore — peer reviewed research</p>
           </div>
-          <a href="http
+          <a href="https://ieeexplore.ieee.org/document/9544104" target="_blank" style={{ background: "#fff", color: "#0a7c52", padding: "0.9rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", flexShrink: 0 }}>
+            View on IEEE →
+          </a>
+        </div>
+
+      </div>
+    </main>
+  );
+}
