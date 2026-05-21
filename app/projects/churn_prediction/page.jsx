@@ -61,9 +61,9 @@ export default function SMobileChurn() {
           </p>
         </div>
 
-        {/* What we built */}
+        {/* What I built */}
         <div style={{ marginBottom: "3rem" }}>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>What we built</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>What I built</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
             {[
               { icon: "⚖️", title: "Class Imbalance Correction", desc: "Handled the severe 2% churn rate imbalance using class weights so the model reflected real-world churn probability rather than predicting no-churn for everyone." },

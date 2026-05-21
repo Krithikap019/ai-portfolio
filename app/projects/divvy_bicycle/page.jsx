@@ -54,9 +54,9 @@ export default function DivvyBicycle() {
           </div>
         </div>
 
-        {/* What we did */}
+        {/* What I did */}
         <div style={{ marginBottom: "3rem" }}>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>What we did</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>What I did</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
             {[
               { icon: "📊", title: "Trip Pattern Analysis", desc: "Analyzed 9M+ trips across hours, days, and user types — identifying peak commuting hours (5–7 AM, 3–6 PM), weekday vs. weekend patterns, and the dominance of short sub-10-minute trips." },

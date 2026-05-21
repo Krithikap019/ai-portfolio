@@ -39,7 +39,7 @@ export default function ConversationIntelligence() {
         {/* What it does - 6 boxes */}
         <div style={{ marginBottom: "3rem" }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>What it does</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
             {[
               { icon: "🧠", title: "Intent Detection", desc: "Automatically identifies the intent behind each conversation using transformer models." },
               { icon: "💬", title: "Sentiment Analysis", desc: "Detects positive, negative, and neutral sentiment across conversation threads." },
@@ -60,16 +60,18 @@ export default function ConversationIntelligence() {
         {/* Key Contributions */}
         <div style={{ marginBottom: "3rem" }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>Key Contributions</h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-            {[
-              { num: "01", text: "Built scalable NLP pipelines processing 100K+ customer interactions using transformer models and RAG-based retrieval (Hugging Face, LangChain, FAISS)." },
-              { num: "02", text: "Improved issue detection accuracy by 30% and cut manual analysis time by ~60% through automated conversation classification." },
-              { num: "03", text: "Designed and orchestrated multi-step AI agent workflows for automated information retrieval and structured LLM output evaluation with safety guardrails." },
-              { num: "04", text: "Deployed modular pipelines via Streamlit enabling sub-second production inference with a clean, interactive UI." },
-            ].map((c) => (
-              <div key={c.num} style={{ display: "flex", gap: "1.5rem", alignItems: "flex-start", padding: "1.2rem 1.5rem", background: "#fff", border: "1px solid rgba(10,124,82,0.12)", borderRadius: "8px" }}>
-                <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "rgba(10,124,82,0.25)", flexShrink: 0, lineHeight: 1 }}>{c.num}</span>
-                <p style={{ fontSize: "0.88rem", color: "#3a5a4a", lineHeight: "1.75" }}>{c.text}</p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+              {[
+              "Built scalable NLP pipelines processing 100K+ customer interactions using transformer models and RAG-based retrieval (Hugging Face, LangChain, FAISS).",
+              "Improved issue detection accuracy by 30% and cut manual analysis time by ~60% through automated conversation classification.",
+              "Designed and orchestrated multi-step AI agent workflows for automated information retrieval and structured LLM output evaluation with safety guardrails.",
+              "Deployed modular pipelines via Streamlit enabling sub-second production inference with a clean, interactive UI.",
+              ].map((text, i) => (
+              <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "1rem", padding: "1rem 1.2rem", background: "#fff", border: "1px solid rgba(10,124,82,0.12)", borderRadius: "8px" }}>
+                <svg style={{ flexShrink: 0, width: "20px", height: "20px", color: "#0a7c52", marginTop: "2px" }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <p style={{ fontSize: "0.88rem", color: "#3a5a4a", lineHeight: "1.75" }}>{text}</p>
               </div>
             ))}
           </div>

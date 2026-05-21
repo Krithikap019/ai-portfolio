@@ -74,9 +74,9 @@ export default function Pentathlon() {
           <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.35)", marginTop: "1rem" }}>★ Best model by profit per customer. Uplift vs. control (no email) baseline.</p>
         </div>
 
-        {/* What we built */}
+        {/* What I built */}
         <div style={{ marginBottom: "3rem" }}>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>What we built</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>What I built</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
             {[
               { icon: "📧", title: "NPTB Decision Engine", desc: "For each customer, selected the profit-maximizing product email (Endurance, Strength, Water, Backcountry, Team, Racquet) or no-message — fully personalized at scale." },

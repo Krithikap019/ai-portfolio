@@ -59,9 +59,9 @@ export default function FiTech() {
           </div>
         </div>
 
-        {/* What we built */}
+        {/* What I built */}
         <div style={{ marginBottom: "3rem" }}>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>What we built</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>What I built</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
             {[
               { icon: "🃏", title: "Product-Segment Matching", desc: "Matched 12 credit card configurations (varying APR, annual fee, fixed vs. variable rate) to 3 BK score segments to maximize expected CLV per offer sent." },

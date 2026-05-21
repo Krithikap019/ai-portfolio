@@ -52,9 +52,9 @@ export default function IntuitQuickBooks() {
           </div>
         </div>
 
-        {/* What we built */}
+        {/* What I built */}
         <div style={{ marginBottom: "3rem" }}>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>What we built</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>What I built</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
             {[
               { icon: "🎯", title: "Profit-Driven Targeting", desc: "Replaced blanket re-mailing with expected-value targeting — only mailing customers where P(upgrade) × $60 margin exceeds the $1.41 mailing cost, ensuring every mail sent has positive expected ROI." },
