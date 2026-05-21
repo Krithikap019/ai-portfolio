@@ -305,7 +305,7 @@ export default function Home() {
           </p>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", paddingTop: "6rem" }}>
-          {[["4+", "Years of Experience"], ["12+", "Projects Shipped"], ["10M+", "Records Analysed"], ["$780K+", "Total Impact"], ["Beta Gamma Sigma", "Global Business Honor Society"], ["95%+", "Academic Average"]].map(([num, label]) => (
+          {[["4+", "Years of Experience"], ["12+", "Projects Shipped"], ["10M+", "Records Analysed"], ["$780K+", "Total Impact"], ["Top 20%", "Beta Gamma Sigma Honor"], ["95%+", "Academic Average"]].map(([num, label]) => (
             <div key={label} style={{ background: "#edf5f1", borderRadius: "8px", padding: "1.5rem", textAlign: "center", border: "1px solid rgba(10,124,82,0.15)" }}>
               <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.5rem", fontWeight: 600, color: "#0a7c52", display: "block" }}>{num}</span>
               <span style={{ fontSize: "0.68rem", fontWeight: 700, color: "#3a5a4a", textTransform: "uppercase", letterSpacing: "0.1em" }}>{label}</span>
