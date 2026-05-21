@@ -90,7 +90,7 @@ function ExperienceTimeline() {
   const renderContent = (exp) => (
     <>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.2rem" }}>
-        <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6rem", fontWeight: 600, color: "#0d1f18" }}>{exp.role}</h3>
+        <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "#0d1f18" }}>{exp.role}</h3>
         <span style={{ fontSize: "0.9rem", color: "#3a5a4a", flexShrink: 0, marginLeft: "1rem", paddingTop: "0.3rem" }}>{exp.period}</span>
       </div>
       <p style={{ fontSize: "1rem", fontWeight: 700, color: "#0a7c52", marginBottom: "0.3rem" }}>{exp.company}</p>
@@ -173,7 +173,7 @@ function ProjectCard({ icon, title, description, tags, color, href }) {
         onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#efefef"; e.currentTarget.style.transform = "translateY(0)"; }}
       >
         <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>{icon}</div>
-        <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.5rem" }}>{title}</h3>
+        <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.5rem" }}>{title}</h3>
         <p style={{ fontSize: "0.85rem", color: "#666", lineHeight: "1.75", marginBottom: "1.2rem" }}>{description}</p>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
@@ -334,7 +334,7 @@ export default function Home() {
               <div style={{ display: "flex", alignItems: "baseline", gap: "1rem", marginBottom: "0.8rem" }}>
                 <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.5rem", fontWeight: 600, color: "rgba(10,124,82,0.45)", lineHeight: 1 }}>{cat.num}</span>
                 <div>
-                  <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.1rem" }}>{cat.title}</h3>
+                  <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "#0d1f18", marginBottom: "0.1rem" }}>{cat.title}</h3>
                   <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0a7c52" }}>{cat.sub}</p>
                 </div>
               </div>
@@ -381,7 +381,7 @@ export default function Home() {
               <div style={{ position: "absolute", left: "-1.55rem", top: "8px", width: "14px", height: "14px", borderRadius: "50%", background: "#0a7c52", zIndex: 1 }} />
               <div style={{ background: "#fff", border: "1px solid rgba(10,124,82,0.12)", borderRadius: "8px", padding: "1.5rem" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.3rem" }}>
-                  <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6rem", fontWeight: 600, color: "#0d1f18" }}>{edu.school}</h3>
+                  <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "#0d1f18" }}>{edu.school}</h3>
                   <span style={{ fontSize: "0.75rem", color: "#3a5a4a", flexShrink: 0, marginLeft: "1rem", paddingTop: "0.3rem" }}>{edu.period}</span>
                 </div>
                 <p style={{ fontSize: "1.1rem", fontWeight: 700, color: "#0a7c52", marginBottom: "1rem" }}>{edu.degree}</p>
