@@ -433,7 +433,7 @@ export default function Home() {
     <span style={{ marginLeft: "auto", color: "rgba(255,255,255,0.4)" }}>→</span>
   </a>
 
-  <a href="https://linkedin.com/in/krithika-suwarna" target="_blank"
+  <a href="https://www.linkedin.com/in/krithika-suwarna-b8240b17b/" target="_blank"
     onMouseEnter={(e) => e.currentTarget.style.background = "rgba(255,255,255,0.15)"}
     onMouseLeave={(e) => e.currentTarget.style.background = "rgba(255,255,255,0.08)"}
     style={{ display: "flex", alignItems: "center", gap: "1rem", padding: "1.2rem 1.5rem", background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "8px", textDecoration: "none", color: "#fff", transition: "background 0.2s" }}>
