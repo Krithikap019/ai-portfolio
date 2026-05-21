@@ -56,6 +56,29 @@ export default function ConversationIntelligence() {
             ))}
           </div>
         </div>
+          {/* How it works */}
+          <div style={{ marginBottom: "3rem" }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>How it works</h2>
+            <div style={{ background: "#0d1f18", borderRadius: "8px", padding: "2rem 2.5rem" }}>
+              <pre style={{ fontFamily: "monospace", fontSize: "0.85rem", color: "#9fe1cb", lineHeight: "1.9", margin: 0 }}>
+          {`Raw Conversation Data (CSV / API stream)
+                ↓
+          Text Preprocessing & Noise Removal (Pandas, regex)
+                ↓
+          Intent Classification (Transformer model, HuggingFace)
+                ↓
+          Sentiment Scoring (positive / negative / neutral)
+                ↓
+          Semantic Embeddings (all-MiniLM-L6-v2)
+                ↓
+          FAISS Vector Index (cosine similarity)
+                ↓
+          Query → Top-K Retrieval (RAG pipeline, LangChain)
+                ↓
+          LLM Answer Generation (Groq) with structured output`}
+              </pre>
+            </div>
+          </div>
 
         {/* Key contributions */}
         <div style={{ marginBottom: "3rem", background: "#fff", border: "1px solid rgba(10,124,82,0.15)", borderRadius: "8px", padding: "2rem" }}>
