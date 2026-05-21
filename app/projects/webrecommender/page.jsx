@@ -32,7 +32,7 @@ export default function RecommenderSystem() {
             <span key={t} style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", background: "#d4ede5", color: "#064d33", padding: "4px 12px", borderRadius: "20px" }}>{t}</span>
           ))}
           <a href="https://publuu.com/flip-book/1112801/2477877" target="_blank" style={{ marginLeft: "auto", background: "#0a7c52", color: "#fff", padding: "0.75rem 1.8rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>
-            View Report →
+            View Research Paper →
           </a>
         </div>
 
@@ -146,11 +146,11 @@ export default function RecommenderSystem() {
         {/* CTA */}
         <div style={{ background: "#0a7c52", borderRadius: "8px", padding: "2.5rem 3rem", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "1rem" }}>
           <div>
-            <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "#fff", marginBottom: "0.4rem" }}>Read the full report</h3>
+            <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "#fff", marginBottom: "0.4rem" }}>Read the research paper</h3>
             <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.9rem" }}>Model design, EDA findings, and evaluation results</p>
           </div>
           <a href="https://publuu.com/flip-book/1112801/2477877" target="_blank" style={{ background: "#fff", color: "#0a7c52", padding: "0.9rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px", flexShrink: 0 }}>
-            View Report →
+            View Paper →
           </a>
         </div>
 
