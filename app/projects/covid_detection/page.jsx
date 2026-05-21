@@ -17,7 +17,7 @@ export default function CovidDetection() {
         <a href="mailto:ksuwarna@ucsd.edu" style={{ background: "#0a7c52", color: "#fff", padding: "0.6rem 1.5rem", fontSize: "0.78rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>Hire me</a>
       </nav>
 
-      <div style={{ maxWidth: "860px", margin: "0 auto", padding: "5rem 2rem" }}>
+      <div style={{ maxWidth: "860px", margin: "0 auto", padding: "5rem 2rem 0rem 2rem" }}>
 
         {/* Header */}
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Published Research · IEEE</p>
@@ -144,6 +144,17 @@ Triage Recommendations for Healthcare Teams`}
         </div>
 
       </div>
+
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "2rem 3.5rem 4rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)", marginTop: "2rem" }}>
+  <Link href="/projects/webrecommender" style={{ textDecoration: "none" }}>
+    <p style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.4rem" }}>← Previous Project</p>
+    <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 600, color: "#0d1f18" }}>Amazon Health Recommender</p>
+  </Link>
+  <Link href="/projects/target_bi" style={{ textDecoration: "none", textAlign: "right" }}>
+    <p style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.4rem" }}>Next Project →</p>
+    <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 600, color: "#0d1f18" }}>Target Brazil – Sales Analysis</p>
+  </Link>
+</div>
     </main>
   );
 }

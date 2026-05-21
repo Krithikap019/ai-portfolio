@@ -17,7 +17,7 @@ export default function IntuitQuickBooks() {
         <Link href="/" style={{ color: "#0a7c52", textDecoration: "none", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>← Back home</Link>
       </nav>
 
-      <div style={{ maxWidth: "860px", margin: "0 auto", padding: "5rem 2rem" }}>
+      <div style={{ maxWidth: "860px", margin: "0 auto", padding: "5rem 2rem 0rem 2rem" }}>
 
         <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.6rem" }}>Academic Project</p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.5rem", fontWeight: 600, lineHeight: "1.05", marginBottom: "1.5rem" }}>Intuit — Predictive Analytics for QuickBooks Upgrade Campaign</h1>
