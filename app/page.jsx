@@ -290,7 +290,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" style={{ padding: "4rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)", display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: "5rem", alignItems: "center" }}>
+      <section id="about" style={{ padding: "4rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)", display: "grid", gridTemplateColumns: "1.15fr 0.85fr", gap: "5rem", alignItems: "center" }}>
         <div>
           <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "1rem" }}>About me</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4.2rem", fontWeight: 700, marginBottom: "3rem" }}>Hi, I'm <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Krithika</em></h2>
@@ -305,9 +305,6 @@ export default function Home() {
            </p>
            <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", marginBottom: "1rem" }}>
            I think in both models and margins. Whether it's optimising a campaign, automating a workflow, or surfacing an insight that changes a roadmap, I care about the business outcome as much as the technical one. I'm particularly drawn to AI-driven automation, where intelligent systems don't just analyse — they act.
-           </p>
-           <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", marginBottom: "1rem" }}>
-           From IEEE-published research to production apps, I work across the full stack of data science and ship things that stick.
            </p>
           <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85" }}>
           Currently open to full-time roles in data science, AI, and analytics.
