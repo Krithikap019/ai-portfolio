@@ -149,6 +149,17 @@ Projected Output: ~$380K incremental revenue`}
         </div>
 
       </div>
+
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "2rem 3.5rem 4rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)", marginTop: "2rem" }}>
+  <Link href="/projects/ai_fin_analyser" style={{ textDecoration: "none" }}>
+    <p style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.4rem" }}>← Previous Project</p>
+    <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 600, color: "#0d1f18" }}>AI Financial Report Analyzer</p>
+  </Link>
+  <Link href="/projects/churn_prediction" style={{ textDecoration: "none", textAlign: "right" }}>
+    <p style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.4rem" }}>Next Project →</p>
+    <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 600, color: "#0d1f18" }}>S-Mobile Churn Prediction</p>
+  </Link>
+</div>
     </main>
   );
 }
