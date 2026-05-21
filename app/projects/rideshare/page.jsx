@@ -39,7 +39,7 @@ export default function RideshareDBaaS() {
         {/* What it does */}
         <div style={{ marginBottom: "3rem" }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>What it does</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
             {[
               { icon: "🚗", title: "Rideshare API", desc: "RESTful endpoints for user registration, ride creation, and ride pooling logic." },
               { icon: "📨", title: "Message Queuing", desc: "RabbitMQ handles async communication between microservices for reliable message delivery." },
