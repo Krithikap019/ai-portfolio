@@ -21,12 +21,12 @@ const projects = [
     href: "projects/ai_fin_analyser",
   },
   {
-    id: "image",
-    icon: "🎨",
-    title: "Image Analyzer",
-    description: "Upload any image and get detailed AI-generated descriptions and insights.",
-    tags: ["Vision API", "React"],
-    href: "/projects/image",
+  id: "covid",
+  icon: "🫁",
+  title: "X-ray AI Diagnostics",
+  description: "Detects COVID-19 presence and severity from chest X-rays and EHR data using multimodal deep learning.",
+  tags: ["Deep Learning", "Computer Vision", "EHR", "PyTorch"],
+  href: "/projects/covid_detection",
   },
 ];
 
@@ -259,7 +259,7 @@ export default function Home() {
             From machine learning pipelines to full-stack AI applications — I turn complex data into products people actually use. With experience across top tech companies like VMware and BroadCom, and a Master's in Business Analytics from UC San Diego, I bring both technical depth and business thinking to every problem I solve.
           </p>
           <div style={{ display: "flex", gap: "1rem", alignItems: "center", marginBottom: "2rem" }}>
-            <a href="#projects" style={{ background: "#0a7c52", color: "#fff", padding: "0.9rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>View my work</a>
+            <a href="/projects" style={{ background: "#0a7c52", color: "#fff", padding: "0.9rem 2rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>View my work</a>
             <a href="#about" style={{ color: "#0a7c52", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderBottom: "2px solid #0a7c52", paddingBottom: "2px" }}>About me →</a>
           </div>
         </div>

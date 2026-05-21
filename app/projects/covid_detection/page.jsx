@@ -60,6 +60,8 @@ export default function CovidDetection() {
               { icon: "🏥", title: "Severity Classification", desc: "Predicts COVID-19 severity and hospitalization risk from EHR data using Boosted Random Forest." },
               { icon: "🔗", title: "Multi-modal Pipeline", desc: "Integrates imaging and clinical record data in a unified ML pipeline for comprehensive diagnosis." },
               { icon: "📋", title: "Triage Recommendations", desc: "Translates model outputs into actionable triage recommendations for healthcare teams." },
+              { icon: "📊", title: "EHR Data Fusion", desc: "Combines structured clinical records (age, vitals, comorbidities) with imaging data for holistic patient assessment." },
+              { icon: "🔬", title: "Grad-CAM Visualization", desc: "Generates heatmaps highlighting infected lung regions to make model predictions interpretable for clinicians." },
             ].map((f) => (
               <div key={f.title} style={{ background: "#fff", border: "1px solid rgba(10,124,82,0.15)", borderRadius: "8px", padding: "1.5rem" }}>
                 <div style={{ fontSize: "1.8rem", marginBottom: "0.8rem" }}>{f.icon}</div>
@@ -89,6 +91,24 @@ Boosted Random Forest (Severity Classification)
         ↓
 Triage Recommendations for Healthcare Teams`}
             </pre>
+          </div>
+        </div>
+        {/* Key contributions */}
+        <div style={{ marginBottom: "3rem", background: "#fff", border: "1px solid rgba(10,124,82,0.15)", borderRadius: "8px", padding: "2rem" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1rem" }}>Key Contributions</h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0.8rem" }}>
+            {[
+              "Developed a multimodal deep learning pipeline combining chest X-ray imaging and Electronic Health Records (EHR) to detect COVID-19 and classify severity.",
+              "Implemented VGG16 transfer learning on chest X-ray datasets, achieving high classification accuracy across COVID-positive, normal, and pneumonia classes.",
+              "Integrated structured EHR features (age, oxygen levels, comorbidities) with image embeddings to predict hospitalization severity tiers.",
+              "Applied Grad-CAM visualizations to highlight infected lung regions, providing clinician-interpretable explanations for model predictions.",
+              "Published findings in IEEE — demonstrating that multimodal fusion outperforms single-modality models in both detection accuracy and severity classification.",
+            ].map((point) => (
+              <div key={point} style={{ display: "flex", alignItems: "flex-start", gap: "0.8rem" }}>
+                <span style={{ color: "#0a7c52", fontWeight: 700, flexShrink: 0 }}>✓</span>
+                <span style={{ fontSize: "0.85rem", color: "#3a5a4a", lineHeight: "1.7" }}>{point}</span>
+              </div>
+            ))}
           </div>
         </div>
 
