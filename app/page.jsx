@@ -413,8 +413,8 @@ export default function Home() {
     </div>
     <div style={{ textAlign: "right" }}>
       <p style={{ fontSize: "1.2rem", fontWeight: 700, color: "rgba(255,255,255,0.70)", marginBottom: "0.4rem" }}>Krithika Suwarna</p>
-      <a href="mailto:krithikap019@gmail.com" style={{ fontSize: "1rem", color: "rgba(255,255,255,0.60)", textDecoration: "none" }}>San Francisco . Bay Area</a><br/>
-      <a href="#" style={{ fontSize: "1rem", color: "rgba(255,255,255,0.60)", textDecoration: "none" }}>Open for Relocation</a>
+      <a href="#" style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.60)", letterSpacing: "0.05em", textDecoration: "none" }}>San Francisco . Bay Area</a><br/>
+      <a href="#" style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.60)", letterSpacing: "0.05em", textDecoration: "none" }}>Open for Relocation</a>
     </div>
   </div>
 
