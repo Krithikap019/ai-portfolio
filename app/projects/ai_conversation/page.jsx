@@ -57,21 +57,19 @@ export default function ConversationIntelligence() {
           </div>
         </div>
 
-        {/* Key Contributions */}
-        <div style={{ marginBottom: "3rem" }}>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>Key Contributions</h2>
-            <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-              {[
+        {/* Key contributions */}
+        <div style={{ marginBottom: "3rem", background: "#fff", border: "1px solid rgba(10,124,82,0.15)", borderRadius: "8px", padding: "2rem" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1rem" }}>Key Contributions</h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0.8rem" }}>
+            {[
               "Built scalable NLP pipelines processing 100K+ customer interactions using transformer models and RAG-based retrieval (Hugging Face, LangChain, FAISS).",
               "Improved issue detection accuracy by 30% and cut manual analysis time by ~60% through automated conversation classification.",
               "Designed and orchestrated multi-step AI agent workflows for automated information retrieval and structured LLM output evaluation with safety guardrails.",
               "Deployed modular pipelines via Streamlit enabling sub-second production inference with a clean, interactive UI.",
-              ].map((text, i) => (
-              <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "1rem", padding: "1rem 1.2rem", background: "#fff", border: "1px solid rgba(10,124,82,0.12)", borderRadius: "8px" }}>
-                <svg style={{ flexShrink: 0, width: "20px", height: "20px", color: "#0a7c52", marginTop: "2px" }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <p style={{ fontSize: "0.88rem", color: "#3a5a4a", lineHeight: "1.75" }}>{text}</p>
+            ].map((point) => (
+              <div key={point} style={{ display: "flex", alignItems: "flex-start", gap: "0.8rem" }}>
+                <span style={{ color: "#0a7c52", fontWeight: 700, flexShrink: 0 }}>✓</span>
+                <span style={{ fontSize: "0.85rem", color: "#3a5a4a", lineHeight: "1.7" }}>{point}</span>
               </div>
             ))}
           </div>
