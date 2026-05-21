@@ -290,7 +290,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" style={{ padding: "5rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }}>
+      <section id="about" style={{ padding: "4rem 3.5rem", borderTop: "1px solid rgba(10,124,82,0.15)", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }}>
         <div>
           <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "1rem" }}>About me</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4.2rem", fontWeight: 700, marginBottom: "3rem" }}>Hi, I'm <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Krithika</em></h2>
@@ -305,7 +305,7 @@ export default function Home() {
           </p>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", paddingTop: "6rem" }}>
-          {[["4+", "Years of Experience"], ["12+", "Projects Shipped"], ["10M+", "Records Analysed"], ["$780K+", "Total Impact"]].map(([num, label]) => (
+          {[["4+", "Years of Experience"], ["12+", "Projects Shipped"], ["10M+", "Records Analysed"], ["$780K+", "Total Impact"], ["Beta Gamma Sigma", "Global Business Honor Society"], ["95%+", "Academic Average"]].map(([num, label]) => (
             <div key={label} style={{ background: "#edf5f1", borderRadius: "8px", padding: "1.5rem", textAlign: "center", border: "1px solid rgba(10,124,82,0.15)" }}>
               <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.5rem", fontWeight: 600, color: "#0a7c52", display: "block" }}>{num}</span>
               <span style={{ fontSize: "0.68rem", fontWeight: 700, color: "#3a5a4a", textTransform: "uppercase", letterSpacing: "0.1em" }}>{label}</span>

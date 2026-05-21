@@ -72,25 +72,7 @@ export default function UpliftModeling() {
             ))}
           </div>
         </div>
-
-        {/* Key Contributions */}
-        <div style={{ marginBottom: "3rem" }}>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1.5rem" }}>Key Contributions</h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-            {[
-              { num: "01", text: "Built a propensity-to-buy model using large-scale mobile game telemetry data (30K–150K users) to predict likelihood of purchasing a $14.99 premium campaign in a free-to-play environment." },
-              { num: "02", text: "Engineered 19 behavioral features capturing engagement, skill progression, multiplayer activity, monetisation history, and ad interactions to identify high-intent users." },
-              { num: "03", text: "Trained and evaluated Logistic Regression, Random Forest, Neural Networks, and XGBoost using AUC, gain curves, and profit metrics — achieving a best AUC of 0.883 with XGBoost." },
-              { num: "04", text: "Designed and analyzed a randomized ad experiment comparing organic users, random targeting, and model-driven targeting, demonstrating significantly higher conversion rates from analytics-based targeting." },
-              { num: "05", text: "Transitioned from predicting organic purchase propensity to modeling incremental ad response (uplift), improving targeting efficiency and maximizing campaign ROI by aligning predictions with true causal impact." },
-            ].map((c) => (
-              <div key={c.num} style={{ display: "flex", gap: "1.5rem", alignItems: "flex-start", padding: "1.2rem 1.5rem", background: "#fff", border: "1px solid rgba(10,124,82,0.12)", borderRadius: "8px" }}>
-                <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontWeight: 600, color: "rgba(10,124,82,0.25)", flexShrink: 0, lineHeight: 1 }}>{c.num}</span>
-                <p style={{ fontSize: "0.88rem", color: "#3a5a4a", lineHeight: "1.75" }}>{c.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+    
         {/* Key contributions */}
         <div style={{ marginBottom: "3rem", background: "#fff", border: "1px solid rgba(10,124,82,0.15)", borderRadius: "8px", padding: "2rem" }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 600, marginBottom: "1rem" }}>Key Contributions</h2>
