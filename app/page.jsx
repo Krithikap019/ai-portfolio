@@ -25,7 +25,7 @@ const projects = [
   icon: "🫁",
   title: "X-ray AI Diagnostics",
   description: "Detects COVID-19 presence and severity from chest X-rays and EHR data using multimodal deep learning.",
-  tags: ["Deep Learning", "Computer Vision", "EHR", "PyTorch"],
+  tags: ["Deep Learning", "Computer Vision"],
   href: "/projects/covid_detection",
   },
 ];
