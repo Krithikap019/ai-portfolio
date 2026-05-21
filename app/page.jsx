@@ -295,11 +295,8 @@ export default function Home() {
           <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "1rem" }}>About me</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4.2rem", fontWeight: 700, marginBottom: "3rem" }}>Hi, I'm <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Krithika</em></h2>
           <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", marginBottom: "1rem" }}>
-            I'm a data scientist and AI engineer who loves building things that actually work. Not just models, but systems that make decisions smarter, processes faster, and outcomes measurable.
+            I'm a data scientist and AI engineer who loves building things that actually work. Not just models, but systems that make decisions smarter, processes faster, and outcomes measurable. I move fast, think in data, and care deeply about the "so what" because a great model no one understands is just math.
           </p>
-          <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", marginBottom: "1rem" }}>
-            I move fast, think in data, and care deeply about the "so what" because a great model no one understands is just math.
-           </p>
            <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", marginBottom: "1rem" }}>
            With expertise in predictive modeling, NLP, and end-to-end ML pipelines from feature engineering to deployment, I specialise in turning complex data into strategic, high-impact decisions. I've worked across healthcare, fintech, and enterprise AI, and what ties it all together is a bias toward impact over elegance.
            </p>
@@ -413,8 +410,7 @@ export default function Home() {
     </div>
     <div style={{ textAlign: "right" }}>
       <p style={{ fontSize: "1.2rem", fontWeight: 700, color: "rgba(255,255,255,0.70)", marginBottom: "0.4rem" }}>Krithika Suwarna</p>
-      <a href="#" style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.60)", letterSpacing: "0.05em", textDecoration: "none" }}>San Francisco . Bay Area</a><br/>
-      <a href="#" style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.60)", letterSpacing: "0.05em", textDecoration: "none" }}>Open for Relocation</a>
+      <a href="#" style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.60)", letterSpacing: "0.05em", textDecoration: "none" }}>San Francisco . Bay Area . Open for Relocation</a>
     </div>
   </div>
 
