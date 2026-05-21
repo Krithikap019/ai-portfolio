@@ -295,11 +295,20 @@ export default function Home() {
           <p style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "1rem" }}>About me</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4.2rem", fontWeight: 700, marginBottom: "3rem" }}>Hi, I'm <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Krithika</em></h2>
           <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", marginBottom: "1rem" }}>
-            I'm a data scientist and AI engineer who loves building things that actually work. Not just models — systems that make decisions smarter, processes faster, and outcomes measurable.
+            I'm a data scientist and AI engineer who loves building things that actually work. Not just models, but systems that make decisions smarter, processes faster, and outcomes measurable.
           </p>
           <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", marginBottom: "1rem" }}>
-            I move fast, think in data, and care deeply about the "so what" — because a great model no one understands is just math.
-          </p>
+            I move fast, think in data, and care deeply about the "so what" because a great model no one understands is just math.
+           </p>
+           <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", marginBottom: "1rem" }}>
+           With expertise in predictive modeling, NLP, and end-to-end ML pipelines from feature engineering to deployment, I specialise in turning complex data into strategic, high-impact decisions. I've worked across healthcare, fintech, and enterprise AI, and what ties it all together is a bias toward impact over elegance.
+           </p>
+           <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", marginBottom: "1rem" }}>
+           I think in both models and margins. Whether it's optimising a campaign, automating a workflow, or surfacing an insight that changes a roadmap, I care about the business outcome as much as the technical one. I'm particularly drawn to AI-driven automation, where intelligent systems don't just analyse — they act.
+           </p>
+           <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85", marginBottom: "1rem" }}>
+           From IEEE-published research to production apps, I work across the full stack of data science and ship things that stick.
+           </p>
           <p style={{ fontSize: "1rem", color: "#3a5a4a", lineHeight: "1.85" }}>
           Currently open to full-time roles in data science, AI, and analytics.
           </p>
@@ -320,11 +329,11 @@ export default function Home() {
         <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "4.2rem", fontWeight: 700, marginBottom: "3rem" }}>Tech <em style={{ color: "#0a7c52", fontStyle: "italic" }}>Stack</em></h2>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0" }}>
           {[
-            { num: "01", title: "Languages & Analysis", sub: "Primary tools", skills: ["Python", "SQL (Advanced)", "R", "PySpark", "Scala", "JavaScript"] },
+            { num: "01", title: "Languages & Analysis", sub: "Primary tools", skills: ["Python", "SQL (Advanced)", "R", "PySpark", "C/C++", "Scala", "JavaScript"] },
             { num: "02", title: "Machine Learning & AI", sub: "Core expertise", skills: ["XGBoost", "LightGBM", "Random Forest", "Neural Networks", "NLP", "RAG Systems", "FAISS", "Transformers", "Hugging Face", "LangChain", "CNN", "A/B Testing"]  },
             { num: "03", title: "Data & Analytics", sub: "Where insights come from", skills: ["Pandas", "NumPy", "Snowflake", "BigQuery", "Databricks", "PostgreSQL", "ETL / ELT", "Airflow", "dbt"] },
             { num: "04", title: "Web & Frameworks", sub: "How I build and ship", skills: ["Streamlit", "FastAPI", "Flask", "React", "Next.js", "REST APIs"] },
-            { num: "05", title: "Cloud & MLOps", sub: "Infrastructure", skills: ["AWS (EC2, S3)", "GCP", "Azure", "Docker", "MLflow", "CI/CD", "Git"] },
+            { num: "05", title: "Cloud & MLOps", sub: "Infrastructure", skills: ["AWS (EC2, S3)", "GCP", "Azure", "Docker","Apache Spark", "MLflow", "CI/CD", "Git"] },
             { num: "06", title: "Visualization & BI", sub: "Insights layer", skills: ["Tableau", "Power BI", "Grafana", "Looker", "KPI Dashboards", "Executive Reporting"] },
           ].map((cat, i) => (
             <div key={cat.num} style={{ padding: "2rem", borderBottom: "1px solid rgba(10,124,82,0.12)", borderRight: i % 2 === 0 ? "1px solid rgba(10,124,82,0.12)" : "none", background: [0, 3, 4].includes(i) ? "#c8dfd4" : "transparent" }}>
