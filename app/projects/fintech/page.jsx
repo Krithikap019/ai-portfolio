@@ -184,6 +184,18 @@ export default function FiTech() {
             </a>
           </div>
         </div>
+        {/* Prev / Next Project Navigation */}
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "4rem", paddingTop: "2rem", borderTop: "1px solid rgba(10,124,82,0.15)" }}>
+        <Link href="/projects/ai_conversation" style={{ textDecoration: "none", group: true }}>
+            <p style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.4rem" }}>← Previous Project</p>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 600, color: "#0d1f18" }}>I Conversation Intelligence</p>
+        </Link>
+
+        <Link href="/projects/intuit" style={{ textDecoration: "none", textAlign: "right" }}>
+            <p style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#0a7c52", marginBottom: "0.4rem" }}>Next Project →</p>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontWeight: 600, color: "#0d1f18" }}>Intuit - Predictive Analysis</p>
+        </Link>
+        </div>
 
       </div>
     </main>
