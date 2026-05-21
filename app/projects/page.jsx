@@ -11,7 +11,7 @@ const projects = [
   { id: 5, title: "COVID-19 Detection from Chest X-rays", cat: "Deep Learning", tags: ["CNN", "VGG16", "Random Forest"], icon: "🏥", link: "/projects/covid_detection" },
   { id: 6, title: "Target Brazil – Performance & Sales Analysis", cat: "Data & Analytics", tags: ["Tableau", "Dashboard", "SQL"], icon: "🎯", link: "/projects/target_bi" },
   { id: 7, title: "Chicago Divvy Bicycle System Analysis", cat: "Data & Analytics", tags: ["Python", "Regression", "Predictive Modeling"], icon: "🚲", link: "/projects/divvy_bicycle" },
-  { id: 8, title: "Creative Gaming – Propensity & Uplift Modeling", cat: "Machine Learning", tags: ["Uplift Modeling", "Data Visualization"], icon: "🎮", link: "projects/" },
+  { id: 8, title: "Creative Gaming – Propensity & Uplift Modeling", cat: "Machine Learning", tags: ["Uplift Modeling", "Data Visualization"], icon: "🎮", link: "projects/creative_gaming" },
   { id: 9, title: "Art Gallery Database Management System", cat: "Cloud & Engineering", tags: ["SQL", "ETL", "Relational Database"], icon: "🎨", link: "/projects/art_gallery" },
   { id: 10, title: "Mini DBaaS for Rideshare", cat: "Cloud & Engineering", tags: ["REST API", "Docker", "Flask"], icon: "🚗", link: "/projects/rideshare" },
   { id: 11, title: "Scalable Data Processing with Snowflake", cat: "Cloud & Engineering", tags: ["SQL", "ETL", "Snowflake"], icon: "❄️", link: "/projects/snowflake" },
