@@ -28,7 +28,7 @@ export default function FinancialAnalyzer() {
 
         {/* Tags + Live link */}
         <div style={{ display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap", marginBottom: "4rem" }}>
-          {["Python", "Streamlit", "RAG", "FAISS", "Groq LLM", "NLP", "SentenceTransformers"].map((t) => (
+          {["Python", "Streamlit", "RAG", "FAISS", "LLM", "NLP", "SentenceTransformers"].map((t) => (
             <span key={t} style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", background: "#d4ede5", color: "#064d33", padding: "4px 12px", borderRadius: "20px" }}>{t}</span>
           ))}
           <a href="https://ai-financial-report-analyzer.streamlit.app/" target="_blank" style={{ marginLeft: "auto", background: "#0a7c52", color: "#fff", padding: "0.75rem 1.8rem", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderRadius: "2px" }}>
@@ -74,7 +74,7 @@ FAISS Vector Index (cosine similarity)
       ↓
 Query → Embedding → Top-K Retrieval
       ↓
-LLM Answer Generation (Groq) with citations`}
+LLM Answer Generation with citations`}
             </pre>
           </div>
         </div>
@@ -110,7 +110,7 @@ LLM Answer Generation (Groq) with citations`}
               { name: "Streamlit", desc: "Frontend UI for interactive document analysis" },
               { name: "SentenceTransformers", desc: "Semantic embeddings using all-MiniLM-L6-v2" },
               { name: "FAISS", desc: "Vector indexing and cosine similarity search" },
-              { name: "Groq LLM", desc: "Fast LLM inference for answer generation" },
+              { name: "LLM", desc: "Fast LLM inference for answer generation" },
               { name: "PyMuPDF", desc: "PDF text extraction with page metadata" },
             ].map((t) => (
               <div key={t.name} style={{ display: "flex", alignItems: "center", gap: "1rem", padding: "0.9rem 1.2rem", background: "#fff", border: "1px solid rgba(10,124,82,0.12)", borderRadius: "6px" }}>
